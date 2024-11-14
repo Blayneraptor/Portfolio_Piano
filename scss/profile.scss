@@ -1,0 +1,38 @@
+@import "mixins";
+
+/*------------------------------------*\
+Profile
+\------------------------------------*/
+.Profile {
+  &__container {
+    padding: 10rem 5rem;
+    transform: skew(0deg, -4deg);
+    background: #dde4e8;
+    color: #333;
+    margin-bottom: 12rem;
+    @include sp {
+      padding: 10rem 0;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    @include sp {
+      flex-wrap: wrap;
+    }
+  }
+  &__body {
+    padding: 4rem;
+    @include sp {
+      padding: 0;
+    }
+  }
+  &__img {
+    filter: drop-shadow(-11px -2px 26px rgba(0, 0, 0, 0.14));
+    text-align: center;
+    @include sp {
+      width: 100%;
+      margin-bottom: 4rem;
+    }
+  }
+}

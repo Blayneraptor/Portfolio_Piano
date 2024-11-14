@@ -1,0 +1,115 @@
+.Header-sp {
+  display: none; }
+  @media (max-width: 780px) {
+    .Header-sp {
+      display: block; } }
+
+.Header {
+  position: relative;
+  background-image: url("../images/hero5.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  /*------------------------------------*\
+  fixed bar
+  \------------------------------------*/
+  /*------------------------------------*\
+  nav
+  \------------------------------------*/
+  /*------------------------------------*\
+  title
+  \------------------------------------*/ }
+  @media (max-width: 780px) {
+    .Header {
+      display: none; } }
+  .Header__top-bar {
+    position: fixed;
+    top: 0;
+    background-color: #738396;
+    width: 100%;
+    z-index: 100; }
+  .Header__right-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #738396;
+    height: 100%;
+    z-index: 100; }
+  .Header__bottom-bar {
+    position: fixed;
+    bottom: 0;
+    background-color: #738396;
+    width: 100%;
+    z-index: 100; }
+  .Header__left-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #738396;
+    height: 100%;
+    z-index: 100; }
+  .Header__list {
+    position: absolute;
+    top: 4rem;
+    right: 11rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 0;
+    color: #dadada;
+    font-size: 2.4rem;
+    font-family: 'Italianno', cursive;
+    -webkit-transform: rotate(-2.4deg);
+    transform: rotate(-2.4deg);
+    font-stretch: condensed;
+    font-weight: bold; }
+  .Header__item {
+    margin-left: 2.8rem; }
+    .Header__item a {
+      color: #DADADA;
+      text-decoration: none; }
+  .Header__title {
+    position: absolute;
+    top: 50vh;
+    left: 21vw;
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    font-weight: bold; }
+    .Header__title span {
+      font-size: 8rem;
+      font-family: 'Fredericka the Great', cursive; }
+  .Header__arrow {
+    opacity: 0;
+    position: absolute;
+    font-size: 3vw;
+    margin-left: -1.5vw;
+    top: 80%;
+    left: 50%;
+    -webkit-animation: huwahuwa 2s infinite alternate linear;
+    animation: huwahuwa 2s infinite alternate linear; }
+    .Header__arrow a {
+      display: block;
+      cursor: pointer; }
+    .Header__arrow i {
+      color: #738396; }
+
+@-webkit-keyframes huwahuwa {
+  0% {
+    top: 80%; }
+  50% {
+    top: 81%; }
+  100% {
+    top: 80%; } }
+
+@keyframes huwahuwa {
+  0% {
+    top: 80%; }
+  50% {
+    top: 81%; }
+  100% {
+    top: 80%; } }
+
+/*# sourceMappingURL=header.css.map */

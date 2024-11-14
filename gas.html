@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+<button type="button" class="btn">Click me!</button>
+<p class="text">Replace me!!</p>
+<script>
+    $('.btn').click(function () {
+
+        $('.text').text('loading . . .');
+
+        // 【main-script】 スプレッドシート内の記述をjsonデータとして読み込み html 内へ入れ込む
+        $.ajax({
+            type: 'GET',
+            url: 'https://script.google.com/macros/s/AKfycbwzN9STaDLhenuuOh7_BwnVFRNXb5N3SRNO08PnH9tNzVsi_OuZ/exec',
+            datatype: 'jsonp',
+            jsonp: 'callback',
+            success: function (json) {
+                debugger;
+            }
+        });
+
+    });
+</script>
+</body>
+</html>

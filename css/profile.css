@@ -1,0 +1,42 @@
+/*------------------------------------*\
+Profile
+\------------------------------------*/
+.Profile__container {
+  padding: 10rem 5rem;
+  -webkit-transform: skew(0deg, -4deg);
+  transform: skew(0deg, -4deg);
+  background: #dde4e8;
+  color: #333;
+  margin-bottom: 12rem; }
+  @media (max-width: 780px) {
+    .Profile__container {
+      padding: 10rem 0; } }
+
+.Profile__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+  @media (max-width: 780px) {
+    .Profile__wrapper {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
+
+.Profile__body {
+  padding: 4rem; }
+  @media (max-width: 780px) {
+    .Profile__body {
+      padding: 0; } }
+
+.Profile__img {
+  -webkit-filter: drop-shadow(-11px -2px 26px rgba(0, 0, 0, 0.14));
+  filter: drop-shadow(-11px -2px 26px rgba(0, 0, 0, 0.14));
+  text-align: center; }
+  @media (max-width: 780px) {
+    .Profile__img {
+      width: 100%;
+      margin-bottom: 4rem; } }
+
+/*# sourceMappingURL=profile.css.map */

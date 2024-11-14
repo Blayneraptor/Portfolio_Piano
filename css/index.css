@@ -1,0 +1,38 @@
+/*------------------------------------*\
+Loading
+\------------------------------------*/
+.Loading {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0; }
+  .Loading__bar {
+    height: 1px;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    background-color: #fff;
+    z-index: 1; }
+  .Loading__up {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000; }
+  .Loading__down {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #000; }
+
+/*------------------------------------*\
+Typing
+\------------------------------------*/
+#js-target {
+  display: none; }
+
+/*# sourceMappingURL=index.css.map */

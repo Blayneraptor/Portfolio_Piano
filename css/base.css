@@ -1,0 +1,78 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Didot_Italic';
+  src: url("../fonts/Didot_Italic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Caveat';
+  src: url("../fonts/Caveat-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Pr6n-r';
+  src: url("../fonts/pr6n-r.otf") format("truetype"); }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  width: 100%;
+  font-size: 1.6rem;
+  color: #2b2a28;
+  background-color: #F2F2F2;
+  line-height: 1.5; }
+
+img {
+  max-width: 100%; }
+
+h4 {
+  font-weight: bold; }
+
+/*------------------------------------*\
+js 背景粒子
+\------------------------------------*/
+.particles-js-canvas-el {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2; }
+
+/*------------------------------------*\
+js 画像のフェ－ドイン
+\------------------------------------*/
+.fadein {
+  opacity: 0;
+  -webkit-transform: translate(0, 80px);
+  transform: translate(0, 80px);
+  -webkit-transition: all 800ms;
+  transition: all 800ms; }
+
+.fadein.right {
+  -webkit-transform: translate(80px, 0);
+  transform: translate(80px, 0); }
+
+.fadein.left {
+  -webkit-transform: translate(-80px, 0);
+  transform: translate(-80px, 0); }
+
+.fadein.top {
+  -webkit-transform: translate(0, -80px);
+  transform: translate(0, -80px); }
+
+.fadein.scrollin, .fadein.inright.scrollin, .fadein.left.scrollin, .fadein.top.scrollin {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0); }
+
+.fadein.delay1 {
+  -webkit-transition-delay: .5s;
+  transition-delay: .5s; }
+
+.fadein.delay2 {
+  -webkit-transition-delay: .8s;
+  transition-delay: .8s; }
+
+.fadein.delay3 {
+  -webkit-transition-delay: 1.1s;
+  transition-delay: 1.1s; }
+
+/*# sourceMappingURL=base.css.map */

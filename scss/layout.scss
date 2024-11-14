@@ -1,0 +1,14 @@
+@import "mixins";
+
+.l-width {
+  max-width: 144rem;
+  width: 70%;
+  margin: 0 auto;
+  @include sp {
+    width: 80%;
+  }
+}
+
+.l-mb20 {
+  margin-bottom: 2rem;
+}

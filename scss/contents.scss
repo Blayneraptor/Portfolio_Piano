@@ -1,0 +1,21 @@
+.Contents {
+  padding-top: 11rem;
+  &__head {
+    font-size: 6.4rem;
+    font-family: 'Cutive', serif;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 8rem;
+  }
+  &__head::after {
+    content: "";
+    height: .1rem;
+    display: block;
+    background-color: #000;
+    width: calc(100% + 50vw);
+    position: absolute;
+    right: 0;
+    left: -50vw;
+    bottom: 0;
+  }
+}

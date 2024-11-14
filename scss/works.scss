@@ -1,0 +1,109 @@
+@import "mixins";
+
+.Works {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8rem;
+    flex-wrap: wrap;
+    @include sp {
+      margin-right: 0;
+      flex-direction: column;
+      flex-flow: row wrap-reverse;
+    }
+  }
+  &__body {
+    width: 50%;
+    @include sp {
+      width: 100%;
+    }
+  }
+  &__lead {
+    font-weight: bold;
+    font-size: 2.4rem;
+  }
+  &__img-wrapper {
+    perspective: 100rem;
+    width: 50%;
+    @include sp {
+      width: 100%;
+      margin-top: -2rem;
+      margin-left: -2rem;
+      margin-bottom: 4rem;
+    }
+  }
+  &__img {
+    z-index: 1;
+    width: 100%;
+    height: 0;
+    padding-top: 62.5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    @include sp {
+      margin-bottom: 4rem;
+    }
+    .is-active &::after {
+      opacity: 1;
+      transform: translateX(2rem) translateY(2rem);
+    }
+    &::after {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      //todo
+      //transition: opacity 0.6s cubic-bezier(0.19, 1, 0.22, 1), transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+      //transform: translateX(0) translateY(0);
+      //backface-visibility: hidden;
+    }
+  }
+  &__img--coderdocs {
+    background-image: url('../images/code_docs.png');
+    &::after {
+      background-image: linear-gradient(to right, #fbbd9b 0%, #f3aa82 100%);
+    }
+  }
+  &__img--annotate {
+    background-image: url('../images/annotating-bar.png');
+    &::after {
+      background-image: linear-gradient(to right, #525252 0%, #9d9d9d 100%);
+    }
+  }
+  &__img--andante {
+    background-image: url('../images/anndante.png');
+    &::after {
+      background-image: linear-gradient(to right, #3d484e 0%, #163043 100%);
+    }
+  }
+  &__reverse {
+    flex-direction: row-reverse;
+    @include sp {
+      flex-direction: row;
+    }
+  }
+  &__reverse .Works__img-wrapper{
+    transform: translateX(-4rem);
+    @include sp {
+      transform: translateX(0);
+    }
+  }
+  &__reverse .Works__body {
+    transform: translateX(2rem);
+    @include sp {
+      transform: translateX(0);
+    }
+  }
+}
+
+.js-rotate-img {
+  transition: transform .5s
+}

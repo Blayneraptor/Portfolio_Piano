@@ -1,0 +1,64 @@
+.Blog {
+  &__content {
+  }
+}
+
+.Slide {
+  overflow: hidden;
+  position: relative;
+  width: 58rem;
+  height: 34rem;
+  &::after.is-active {
+    transform: translateX(0px);
+  }
+  &::after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #f2f2f2;
+  }
+  &__img {
+    transform: translateX(-20px);
+    opacity: 0;
+    z-index: 1;
+    position: relative;
+  }
+}
+
+.Slide.is-active::after {
+  animation: Slide-in 1.3s cubic-bezier(0.075, 0.82, 0.165, 1) 0s 1 forwards
+}
+
+.is-active > .Slide__img {
+  animation-name: i-Slide-in;
+  animation-duration: .5s;
+  animation-delay: 0.8s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-fill-mode:forwards;
+}
+
+@keyframes Slide-in {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes i-Slide-in {
+  0% {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}

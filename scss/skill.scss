@@ -1,0 +1,45 @@
+@import "mixins";
+
+/*------------------------------------*\
+Skill
+\------------------------------------*/
+.Skill {
+  margin-bottom: 8rem;
+  &__wrapper {
+    display: flex;
+    margin-bottom: 4.8rem;
+    align-items: flex-start;
+    @include sp {
+      flex-wrap: wrap;
+      text-align: center;
+    }
+  }
+  &__img {
+    @include sp {
+      text-align: center;
+      margin: 0 auto;
+      transform: translateX(-10%);
+    }
+  }
+  &__info {
+    margin-left: 2rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    @include sp {
+      margin-left: 0;
+      padding: 2rem 0;
+    }
+  }
+  &__head {
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #86b7f2;
+  }
+  &__body {
+
+  }
+  &__score{
+    font-size: 2.4rem
+  }
+}

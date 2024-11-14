@@ -1,0 +1,148 @@
+<div class="voice cf l">
+    <figure class="icon"><img src="https://souken-blog.com/wp-content/uploads/2016/07/sblog-prf004.png">
+        <figcaption class="name">ken</figcaption>
+    </figure>
+    <div class="voicecomment">
+        早速、制作に使っています(^^)v<br>
+    </div>
+</div>
+
+<style>
+    .voice{
+        margin:1em 0 1.3em;
+        font-size:0.95em;
+    }
+
+    .voice .voicecomment{
+        border:3px solid #eee;
+        background-color: #fff;
+        color: #444;
+        padding: 2.5%;
+        position:relative;
+        width:86%;
+        border-radius:5px;
+    }
+    .voice.l .voicecomment{
+        float:right;
+    }
+    .voice.r .voicecomment{
+        float:left;
+    }
+
+    .voice.l .voicecomment:before{
+        content: '';
+        position: absolute;
+        border-right: 8px solid #eee;
+        border-bottom: 8px solid transparent;
+        border-top: 8px solid transparent;
+        top: 10px;
+        left: -11px;
+    }
+    .voice.l .voicecomment:after{
+        content: '';
+        position: absolute;
+        border-right: 10px solid #fff;
+        border-bottom: 8px solid transparent;
+        border-top: 8px solid transparent;
+        top: 10px;
+        left: -7px;
+    }
+    .voice.r .voicecomment:before{
+        content: '';
+        position: absolute;
+        border-left: 8px solid #eee;
+        border-bottom: 8px solid transparent;
+        border-top: 8px solid transparent;
+        top: 10px;
+        right: -11px;
+    }
+    .voice.r .voicecomment:after{
+        content: '';
+        position: absolute;
+        border-left: 10px solid #fff;
+        border-bottom: 8px solid transparent;
+        border-top: 8px solid transparent;
+        top: 10px;
+        right: -7px;
+    }
+
+    .voice .voicecomment h2,
+    .voice .voicecomment h3,
+    .voice .voicecomment h4,
+    .voice .voicecomment h5{
+        margin:10px 0!important;
+        padding:0;
+    }
+    .voice .voicecomment p{
+        margin-bottom:1em;
+    }
+    .voice .voicecomment p:last-child{
+        margin-bottom:0;
+    }
+    .voice .icon{
+        width:10%;
+        text-align:center;
+    }
+    .voice.l .icon{
+        float:left;
+        margin-left: 8px;
+    }
+    .voice.r .icon{
+        float:right;
+        margin-right: 8px;
+    }
+    .voice .icon img{
+        border-radius:50%;
+        margin:0;
+        box-shadow: 0 0 8px #ccc;
+        border: 2px solid #fff;
+    }
+    .voice .icon .name{
+        font-size: 0.65em;
+        padding:0.4em 0;
+    }
+    .voice.big .icon{
+        width:18%;
+    }
+    .voice.big .voicecomment{
+        width:78%;
+    }
+
+
+    /* å¹ãå‡ºã—ãƒ‡ã‚¶ã‚¤ãƒ³å¤‰æ›´ */
+    /* FBé¢¨ */
+
+    .voice.l.fb .voicecomment:before{
+        border-right-color: #4C5CB0;
+    }
+    .voice.l.fb .voicecomment:after,
+    .voice.l.line .voicecomment:after{
+        content:none;
+    }
+    .voice.fb .voicecomment{
+        background: #4C5CB0;
+        border-color: #4C5CB0;
+        color:#fff;
+    }
+    .voice.r.fb .voicecomment:before{
+        border-left-color: #4C5CB0;
+    }
+    .voice.r.fb .voicecomment:after{
+        content:none;
+    }
+    /* LINEé¢¨ */
+    .voice.line .voicecomment{
+        background: #7ACC40;
+        border-color: #7ACC40;
+        color:#fff;
+    }
+    .voice.l.line .voicecomment:before{
+        border-right-color: #7ACC40;
+    }
+    .voice.r.line .voicecomment:before{
+        border-left-color: #7ACC40;
+    }
+    .voice.r.line .voicecomment:after{
+        content:none;
+    }
+</style>
