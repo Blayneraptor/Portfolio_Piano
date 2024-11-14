@@ -8,7 +8,7 @@
 
 @media (max-width: 780px) {
   .Works__content {
-    flex-direction: column; /* Poner los elementos en columna en pantallas pequeñas */
+    flex-direction: row; /* Poner los elementos en columna en pantallas pequeñas */
   }
 }
 
