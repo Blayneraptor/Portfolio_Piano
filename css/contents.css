@@ -1,40 +1,36 @@
-.Contents {
-  padding-top: 11rem;
-}
-
-.Contents__head {
-  font-size: 6.4rem;
-  font-family: 'Cutive', serif;
-  position: relative;
-  display: inline-block;
-  margin-bottom: 8rem;
-}
-
-.Contents__head::after {
-  content: "";
-  height: .1rem;
-  display: block;
-  background-color: #000;
-  width: calc(100% + 50vw);
-  position: absolute;
-  right: 0;
-  left: -50vw;
-  bottom: 0;
-}
-
-/* Alineación de texto y video */
-.Works__body {
+.Works__content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  margin-bottom: 8rem;
+  flex-wrap: wrap;
 }
 
-.Works__body > div {
+@media (max-width: 780px) {
+  .Works__content {
+    flex-direction: column;
+  }
+}
+
+.Works__body {
   width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .Works__body iframe {
   width: 100%;
-  height: 500px; /* Ajusta el tamaño del video */
+  height: 500px;  /* Ajusta el tamaño del video */
   border: none;
+}
+
+.Works__body > div {
+  height: 500px; /* Asegura que el tamaño del texto sea similar al del video */
+  overflow: auto;
+}
+
+.Works__lead {
+  font-weight: bold;
+  font-size: 2.4rem; /* Ajusta el tamaño del texto aquí si es necesario */
 }
