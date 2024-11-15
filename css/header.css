@@ -60,15 +60,22 @@
     color: #dadada;
     font-size: 2.4rem;
     font-family: 'Italianno', cursive;
-    -webkit-transform: rotate(-2.4deg);
-    transform: rotate(-2.4deg);
+
     font-stretch: condensed;
     font-weight: bold; }
   .Header__item {
     margin-left: 2.8rem; }
     .Header__item a {
+      font-size: 3.5rem; /* Cambia el tamaño según lo que desees */
+      display: inline-block;
       color: #DADADA;
       text-decoration: none; }
+      .Header__item a:hover {
+        color: #94a5a4; /* Cambia el color al pasar el ratón por encima */
+        transform: scale(1.2); /* Amplía el enlace al pasar el ratón por encima */
+        transition: transform 0.2s ease, color 0.2s ease; /* Añade una transición suave */
+}
+
   .Header__title {
     position: absolute;
     top: 50vh;
