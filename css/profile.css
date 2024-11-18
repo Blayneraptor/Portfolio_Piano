@@ -7,10 +7,16 @@ Profile
   transform: skew(0deg, -4deg);
   background: #dde4e8;
   color: #333;
-  margin-bottom: 12rem; }
-  @media (max-width: 780px) {
-    .Profile__container {
-      padding: 10rem 0; } }
+  margin-bottom: 12rem;
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total del contenedor */
+  width: 100%;
+}
+
+@media (max-width: 780px) {
+  .Profile__container {
+    padding: 5rem 2rem; /* Reduce el padding para pantallas pequeñas */
+  }
+}
 
 .Profile__wrapper {
   display: -webkit-box;
@@ -24,12 +30,20 @@ Profile
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; } }
 
-.Profile__body {
-  padding: 4rem; }
-  @media (max-width: 780px) {
-    .Profile__body {
-      padding: 0; } }
-
+      .Profile__body {
+        font-size: 3rem; /* Aumenta el tamaño de la fuente del párrafo */
+        padding: 4rem;
+        word-wrap: break-word; /* Permite que las palabras largas se ajusten en la siguiente línea */
+        overflow-wrap: break-word; /* Para asegurar que no se corten las palabras */
+        hyphens: auto; /* Añadido para permitir la división automática de palabras */
+      }
+      
+      @media (max-width: 780px) {
+        .Profile__body {
+          padding: 0;
+        }
+      }
+      
 .Profile__img {
   -webkit-filter: drop-shadow(-11px -2px 26px rgba(0, 0, 0, 0.14));
   filter: drop-shadow(-11px -2px 26px rgba(0, 0, 0, 0.14));

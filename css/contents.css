@@ -1,28 +1,35 @@
 .Contents {
-  padding-top: 4rem; }
-  .Contents__head {
-    font-size: 10rem;
-    font-family: 'Fredericka the Great', cursive;
-    position: relative;
-    display: inline-block;
-    margin-bottom: 8rem; }
-  .Contents__head::after {
-    content: "";
-    height: .1rem;
-    display: block;
-    background-color: #000;
-    width: calc(100% + 50vw);
-    position: absolute;
-    right: 0;
-    left: -50vw;
-    bottom: 0; }
+  padding-top: 4rem;
+}
 
-    /* Estilo general para el div */
+.Contents__head {
+  font-size: 10rem;
+  font-family: 'Fredericka the Great', cursive;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 8rem;
+}
+
+.Contents__head::after {
+  content: "";
+  height: .1rem;
+  display: block;
+  background-color: #000;
+  width: calc(100% + 50vw);
+  position: absolute;
+  right: 0;
+  left: -50vw;
+  bottom: 0;
+}
+
+/* Estilo general para el div */
 .content-expanded {
   font-size: 2rem; /* Establece un tamaño base para el texto */
   line-height: 1.6; /* Mayor altura de línea para mejorar la legibilidad */
   font-family: 'Arial', sans-serif; /* Fuente clara y moderna (opcional) */
   margin-bottom: 2rem; /* Espacio inferior entre párrafos */
+  word-wrap: break-word; /* Permite que las palabras largas se ajusten en la siguiente línea */
+  overflow-wrap: break-word; /* Asegura que no se corten las palabras */
 }
 
 /* Aumentar el tamaño del h4 */
@@ -37,6 +44,8 @@
   font-size: 1.8rem; /* Agrandar el texto de los párrafos */
   margin-bottom: 1rem; /* Separación entre párrafos */
   color: #333; /* Color más oscuro para los párrafos */
+  word-wrap: break-word; /* Permite que las palabras largas se ajusten en la siguiente línea */
+  overflow-wrap: break-word; /* Asegura que no se corten las palabras */
 }
 
 /* Estilo para el texto en cursiva dentro del párrafo */
@@ -60,5 +69,11 @@
   }
 }
 
+/* Estilo específico para el span dentro de .content-expanded */
+.content-expanded span {
+  font-size: 2.4rem; /* Aumentar el tamaño del span */
+  font-weight: bold; /* Hacer el texto en negrita si lo deseas */
+  color: #333; /* Establecer el color, puedes personalizarlo */
+}
 
 /*# sourceMappingURL=contents.css.map */
