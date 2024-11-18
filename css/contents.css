@@ -17,4 +17,48 @@
     left: -50vw;
     bottom: 0; }
 
+    /* Estilo general para el div */
+.content-expanded {
+  font-size: 2rem; /* Establece un tamaño base para el texto */
+  line-height: 1.6; /* Mayor altura de línea para mejorar la legibilidad */
+  font-family: 'Arial', sans-serif; /* Fuente clara y moderna (opcional) */
+  margin-bottom: 2rem; /* Espacio inferior entre párrafos */
+}
+
+/* Aumentar el tamaño del h4 */
+.content-expanded h4 {
+  font-size: 3rem; /* Aumentar el tamaño del título */
+  font-weight: bold; /* Hacer el texto en negrita */
+  margin-bottom: 1rem; /* Espacio debajo del título */
+}
+
+/* Estilos para los párrafos */
+.content-expanded p {
+  font-size: 1.8rem; /* Agrandar el texto de los párrafos */
+  margin-bottom: 1rem; /* Separación entre párrafos */
+  color: #333; /* Color más oscuro para los párrafos */
+}
+
+/* Estilo para el texto en cursiva dentro del párrafo */
+.content-expanded em {
+  font-style: italic;
+  font-weight: normal; /* Cambia el peso de la cursiva para diferenciarla */
+}
+
+/* Aumentar el tamaño del texto en pantallas más grandes */
+@media (min-width: 768px) {
+  .content-expanded {
+    font-size: 2.4rem; /* Aumentar tamaño base */
+  }
+  
+  .content-expanded h4 {
+    font-size: 3.5rem; /* Aumentar aún más el tamaño del título */
+  }
+  
+  .content-expanded p {
+    font-size: 2rem; /* Agrandar los párrafos */
+  }
+}
+
+
 /*# sourceMappingURL=contents.css.map */
