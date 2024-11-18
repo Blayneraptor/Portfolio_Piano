@@ -108,7 +108,7 @@
 .Header__title {
   position: absolute;
   top: 100px;
-  left: 100px;
+  left: 90px;
   -webkit-transform: rotate(-4deg);
   transform: rotate(-4deg);
   -webkit-transform-origin: left;
