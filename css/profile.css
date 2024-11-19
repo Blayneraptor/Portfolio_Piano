@@ -17,6 +17,11 @@ Profile
     padding: 5rem 2rem; /* Reduce el padding para pantallas pequeñas */
   }
 }
+.Profile__container {
+  word-break: keep-all; /* Evita romper palabras */
+  overflow-wrap: normal; /* Respeta las palabras largas */
+  hyphens: none; /* Evita guiones automáticos */
+}
 
 .Profile__wrapper {
   display: -webkit-box;
