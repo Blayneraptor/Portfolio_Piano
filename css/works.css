@@ -16,7 +16,7 @@
 
 @media (max-width: 780px) {
   .Works__content {
-    
+
     margin-right: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -28,7 +28,7 @@
 }
 
 .Works__body {
-  
+
   width: 50%;
   display: flex;
   justify-content: space-between;
@@ -40,10 +40,8 @@
 
 @media (max-width: 780px) {
   .Works__body {
-    
     width: 100%;
     flex-direction: column;
-    
   }
 }
 
@@ -65,7 +63,7 @@
   -webkit-perspective: 100rem;
   perspective: 100rem;
   width: 0%;
-  
+
 }
 
 @media (max-width: 780px) {
@@ -73,7 +71,7 @@
   .Works__img-wrapper,
   .Works__content iframe {
     display: flex;
-    
+
     /* Elimina cualquier margen izquierdo */
     padding-left: 0;
     /* Asegura que no haya espacio interno */
@@ -202,4 +200,3 @@
 
 
 /*# sourceMappingURL=works.css.map */
-
