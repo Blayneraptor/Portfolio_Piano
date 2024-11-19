@@ -20,13 +20,22 @@
       flex-direction: column;
       -ms-flex-flow: row wrap-reverse;
       flex-flow: row wrap-reverse; } }
-
-.Works__body {
-  width: 50%; }
-  @media (max-width: 780px) {
-    .Works__body {
-      width: 100%; } }
-
+      .Works__body {
+        width: 50%;
+      }
+      
+      @media (max-width: 780px) {
+        .Works__body {
+          width: 100%;
+        }
+      }
+      
+      .Works__body p {
+        word-break: keep-all; /* Evita romper palabras */
+        overflow-wrap: normal; /* Respeta las palabras largas */
+        hyphens: none; /* Evita guiones automáticos */
+      }
+      
 .Works__lead {
   font-weight: bold;
   font-size: 6.4rem; }
