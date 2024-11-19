@@ -22,11 +22,19 @@
       flex-flow: row wrap-reverse; } }
       .Works__body {
         width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 200px;
+        
+        
       }
       
       @media (max-width: 780px) {
         .Works__body {
           width: 100%;
+          flex-direction: column;
+          
         }
       }
       
@@ -45,11 +53,18 @@
   perspective: 100rem;
   width: 50%; }
   @media (max-width: 780px) {
-    .Works__img-wrapper {
-      width: 100%;
-      margin-top: -2rem;
-      margin-left: -2rem;
-      margin-bottom: 4rem; } }
+    .Works__img-wrapper, 
+    .Works__content iframe {
+      margin-left: 0; /* Elimina cualquier margen izquierdo */
+      padding-left: 0; /* Asegura que no haya espacio interno */
+      width: 100%; /* Haz que ocupe todo el ancho disponible */
+    }
+  
+    .Works__img-wrapper iframe {
+      width: 100%; /* Ajusta el iframe para que sea totalmente responsivo */
+      height: auto; /* Permite que se ajuste automáticamente */
+    }
+  }
 
 .Works__img {
   z-index: 1;
