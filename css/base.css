@@ -20,7 +20,9 @@ body {
   color: #2b2a28;
   background-color: #F2F2F2;
   line-height: 1.5; 
+  margin: 0; /* Asegúrate de que no haya márgenes que provoquen desbordamiento */
   overflow-x: hidden;
+  overflow-y: auto; 
 
 }
 

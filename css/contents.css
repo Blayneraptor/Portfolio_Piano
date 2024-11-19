@@ -1,5 +1,6 @@
 .Contents {
   padding-top: 4rem;
+  overflow: hidden; /* Oculta contenido que se salga del contenedor */
 }
 
 .Contents__head {
