@@ -4,7 +4,7 @@
 
 @media (max-width: 780px) {
   .Header-sp {
-    display: block;
+    display: block;;
     width: 100%;
     height: auto; /* Cambia el tamaño de la imagen a la mitad del contenedor */
     margin: 0 auto; /* Centra la imagen si es necesario */
