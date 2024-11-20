@@ -62,7 +62,7 @@
 @media (max-width: 780px) {
   .Works__lead {
     margin-top:-50px;
-    font-size: 4rem;
+    font-size: 40px;
 }
 }
 
@@ -80,7 +80,7 @@
     display: flex;
 
     /* Elimina cualquier margen izquierdo */
-    padding-left: 0;
+    padding-left: 0px;
     /* Asegura que no haya espacio interno */
     width: 100%;
     /* Haz que ocupe todo el ancho disponible */
