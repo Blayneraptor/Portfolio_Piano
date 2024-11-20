@@ -90,14 +90,14 @@
   }
 
   .content-expanded p {
-    font-size: 2rem;
+    font-size: rem;
     /* Agrandar los párrafos */
   }
 }
 
 /* Estilo específico para el span dentro de .content-expanded */
 .content-expanded span {
-  font-size: 2.4rem;
+  font-size: 2rem;
   /* Aumentar el tamaño del span */
   font-weight: bold;
   /* Hacer el texto en negrita si lo deseas */
