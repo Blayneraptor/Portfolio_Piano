@@ -78,19 +78,20 @@
 }
 
 /* Aumentar el tamaño del texto en pantallas más grandes */
-@media (min-width: 780px) {
+@media (max-width: 780px) {
   .content-expanded {
-    font-size: 2.4rem;
+    font-size: 1.4rem;
     /* Aumentar tamaño base */
   }
 
   .content-expanded h4 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     /* Aumentar aún más el tamaño del título */
+    
   }
 
   .content-expanded p {
-    font-size: rem;
+    font-size: 2rem;
     /* Agrandar los párrafos */
   }
 }
