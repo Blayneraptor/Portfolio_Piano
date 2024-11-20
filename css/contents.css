@@ -1,6 +1,7 @@
 .Contents {
   padding-top: 4rem;
-  overflow: hidden; /* Oculta contenido que se salga del contenedor */
+  overflow: hidden;
+  /* Oculta contenido que se salga del contenedor */
 }
 
 .Contents__head {
@@ -9,6 +10,12 @@
   position: relative;
   display: inline-block;
   margin-bottom: 8rem;
+}
+
+@media (max-width: 780px) {
+  .Contents__head {
+    font-size: 6rem;
+  }
 }
 
 .Contents__head::after {
@@ -25,56 +32,77 @@
 
 /* Estilo general para el div */
 .content-expanded {
-  font-size: 2rem; /* Establece un tamaño base para el texto */
-  line-height: 1.6; /* Mayor altura de línea para mejorar la legibilidad */
-  font-family: 'Arial', sans-serif; /* Fuente clara y moderna (opcional) */
-  margin-bottom: 2rem; /* Espacio inferior entre párrafos */
-  word-wrap: break-word; /* Permite que las palabras largas se ajusten en la siguiente línea */
-  overflow-wrap: break-word; /* Asegura que no se corten las palabras */
+  font-size: 2rem;
+  /* Establece un tamaño base para el texto */
+  line-height: 1.6;
+  /* Mayor altura de línea para mejorar la legibilidad */
+  font-family: 'Arial', sans-serif;
+  /* Fuente clara y moderna (opcional) */
+  margin-bottom: 2rem;
+  /* Espacio inferior entre párrafos */
+  word-wrap: break-word;
+  /* Permite que las palabras largas se ajusten en la siguiente línea */
+  overflow-wrap: break-word;
+  /* Asegura que no se corten las palabras */
 }
 
 /* Aumentar el tamaño del h4 */
 .content-expanded h4 {
-  font-size: 3rem; /* Aumentar el tamaño del título */
-  font-weight: bold; /* Hacer el texto en negrita */
-  margin-bottom: 1rem; /* Espacio debajo del título */
+  font-size: 3rem;
+  /* Aumentar el tamaño del título */
+  font-weight: bold;
+  /* Hacer el texto en negrita */
+  margin-bottom: 1rem;
+  /* Espacio debajo del título */
 }
 
 /* Estilos para los párrafos */
 .content-expanded p {
-  font-size: 1.8rem; /* Agrandar el texto de los párrafos */
-  margin-bottom: 1rem; /* Separación entre párrafos */
-  color: #333; /* Color más oscuro para los párrafos */
-  word-wrap: break-word; /* Permite que las palabras largas se ajusten en la siguiente línea */
-  overflow-wrap: break-word; /* Asegura que no se corten las palabras */
+  font-size: 1.8rem;
+  /* Agrandar el texto de los párrafos */
+  margin-bottom: 1rem;
+  /* Separación entre párrafos */
+  color: #333;
+  /* Color más oscuro para los párrafos */
+  word-wrap: break-word;
+  /* Permite que las palabras largas se ajusten en la siguiente línea */
+  overflow-wrap: break-word;
+  /* Asegura que no se corten las palabras */
 }
 
 /* Estilo para el texto en cursiva dentro del párrafo */
 .content-expanded em {
   font-style: italic;
-  font-weight: normal; /* Cambia el peso de la cursiva para diferenciarla */
+  font-weight: normal;
+  /* Cambia el peso de la cursiva para diferenciarla */
 }
 
 /* Aumentar el tamaño del texto en pantallas más grandes */
-@media (min-width: 768px) {
+@media (min-width: 780px) {
   .content-expanded {
-    font-size: 2.4rem; /* Aumentar tamaño base */
+    font-size: 2.4rem;
+    /* Aumentar tamaño base */
   }
-  
+
   .content-expanded h4 {
-    font-size: 3.5rem; /* Aumentar aún más el tamaño del título */
+    font-size: 3.5rem;
+    /* Aumentar aún más el tamaño del título */
   }
-  
+
   .content-expanded p {
-    font-size: 2rem; /* Agrandar los párrafos */
+    font-size: 2rem;
+    /* Agrandar los párrafos */
   }
 }
 
 /* Estilo específico para el span dentro de .content-expanded */
 .content-expanded span {
-  font-size: 2.4rem; /* Aumentar el tamaño del span */
-  font-weight: bold; /* Hacer el texto en negrita si lo deseas */
-  color: #333; /* Establecer el color, puedes personalizarlo */
+  font-size: 2.4rem;
+  /* Aumentar el tamaño del span */
+  font-weight: bold;
+  /* Hacer el texto en negrita si lo deseas */
+  color: #333;
+  /* Establecer el color, puedes personalizarlo */
 }
 
 /*# sourceMappingURL=contents.css.map */
