@@ -42,6 +42,7 @@
   .Works__body {
     width: 100%;
     flex-direction: column;
+    margin-bottom: 300px;
   }
 }
 
@@ -57,6 +58,13 @@
 .Works__lead {
   font-weight: bold;
   font-size: 6.4rem;
+}
+@media (max-width: 780px) {
+  .Works__lead {
+    margin-top:-50px;
+    
+    font-size: 3.5rem;
+}
 }
 
 .Works__img-wrapper {
