@@ -24,3 +24,5 @@ A medida que continúo con mi aprendizaje, este portfolio se actualizará con nu
 ---
 
 Si te interesa seguir mi progreso musical 🎶 o compartir tus opiniones 💬, no dudes en **contactarme** 📩. ¡Gracias por visitar mi portfolio! 🙌
+
+
