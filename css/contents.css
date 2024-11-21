@@ -15,8 +15,6 @@
 @media (max-width: 780px) {
   .Contents__head {
     font-size: 6rem;
-    animation: none;  /* Desactiva cualquier animación en pantallas pequeñas */
-    transform: none;  /* Elimina cualquier transform aplicado (por ejemplo, 'left' o 'fadein') */
   }
 }
 
