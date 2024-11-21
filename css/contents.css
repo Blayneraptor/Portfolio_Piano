@@ -98,22 +98,6 @@
     font-size: 2rem;
     /* Agrandar los párrafos */
   }
-
-  .content-expanded span {
-    font-size: 2rem;
-    /* Aumentar el tamaño del span */
-    font-weight: bold;
-    /* Hacer el texto en negrita si lo deseas */
-    color: #333;
-    /* Establecer el color, puedes personalizarlo */
-    word-break: keep-all;
-    /* Evita romper palabras */
-    overflow-wrap: normal;
-    /* Respeta las palabras largas */
-    hyphens: none;
-    /* Evita guiones automáticos */
-  }
-
 }
 
 /* Estilo específico para el span dentro de .content-expanded */
