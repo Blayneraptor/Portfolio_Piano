@@ -84,19 +84,28 @@
   .content-expanded {
     font-size: 1.4rem;
     /* Aumentar tamaño base */
-    
+
   }
 
   .content-expanded h4 {
     font-size: 2.5rem;
     /* Aumentar aún más el tamaño del título */
-    
-    
+
+
   }
 
   .content-expanded p {
     font-size: 2rem;
     /* Agrandar los párrafos */
+  }
+
+  .content-expanded span {
+    font-size: 2rem;
+    /* Aumentar el tamaño del span */
+    font-weight: bold;
+    /* Hacer el texto en negrita si lo deseas */
+    color: #333;
+    /* Establecer el color, puedes personalizarlo */
     word-break: keep-all;
     /* Evita romper palabras */
     overflow-wrap: normal;
@@ -104,6 +113,7 @@
     hyphens: none;
     /* Evita guiones automáticos */
   }
+
 }
 
 /* Estilo específico para el span dentro de .content-expanded */
@@ -123,4 +133,3 @@
 }
 
 /*# sourceMappingURL=contents.css.map */
-
