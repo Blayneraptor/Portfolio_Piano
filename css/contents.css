@@ -84,6 +84,7 @@
   .content-expanded {
     font-size: 1.4rem;
     /* Aumentar tamaño base */
+    
 
   }
 
@@ -98,11 +99,13 @@
     font-size: 2rem;
     /* Agrandar los párrafos */
   }
+  
+  
 }
 
 /* Estilo específico para el span dentro de .content-expanded */
 .content-expanded span {
-  font-size: 2rem;
+  font-size: 2.3rem;
   /* Aumentar el tamaño del span */
   font-weight: bold;
   /* Hacer el texto en negrita si lo deseas */
