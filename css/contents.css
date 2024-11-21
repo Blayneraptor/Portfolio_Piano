@@ -84,17 +84,25 @@
   .content-expanded {
     font-size: 1.4rem;
     /* Aumentar tamaño base */
+    
   }
 
   .content-expanded h4 {
     font-size: 2.5rem;
     /* Aumentar aún más el tamaño del título */
     
+    
   }
 
   .content-expanded p {
     font-size: 2rem;
     /* Agrandar los párrafos */
+    word-break: keep-all;
+    /* Evita romper palabras */
+    overflow-wrap: normal;
+    /* Respeta las palabras largas */
+    hyphens: none;
+    /* Evita guiones automáticos */
   }
 }
 
@@ -106,6 +114,12 @@
   /* Hacer el texto en negrita si lo deseas */
   color: #333;
   /* Establecer el color, puedes personalizarlo */
+  word-break: keep-all;
+  /* Evita romper palabras */
+  overflow-wrap: normal;
+  /* Respeta las palabras largas */
+  hyphens: none;
+  /* Evita guiones automáticos */
 }
 
 /*# sourceMappingURL=contents.css.map */
