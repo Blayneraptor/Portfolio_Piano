@@ -28,21 +28,16 @@
 }
 
 .Works__body {
-
-  width: 50%;
   display: flex;
+  flex-direction: row; /* Lado a lado en pantallas grandes */
   justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 100px;
-
-
+  gap: 20px;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 768px) {
   .Works__body {
-    width: 100%;
-    flex-direction: column;
-    margin-bottom: 300px;
+      flex-direction: column; /* Apilar elementos en pantallas pequeñas */
+      align-items: center;
   }
 }
 
@@ -67,16 +62,31 @@
 }
 }
 
-.Works__img-wrapper {
-  -webkit-perspective: 100rem;
-  perspective: 100rem;
-  width: 100%;
-
+.video-container {
+  position: relative;
+  width: 60%; /* El contenedor ocupa todo el ancho disponible */
+  padding-bottom: 56.25%; /* Altura calculada para una relación de aspecto 16:9 */
+  height: 0; /* El truco es establecer la altura en 0 */
+  overflow: hidden;
 }
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* El iframe ocupa todo el ancho del contenedor */
+  height: 100%; /* El iframe ocupa todo el alto del contenedor */
+  border: 0; /* Elimina bordes */
+}
+
 
 @media (max-width: 780px) {
 
-  .Works__img-wrapper,
+  .video-container {
+    width: 90%;
+    padding-bottom: 100%; /* Cambiar la relación de aspecto si es necesario */
+}
+
   .Works__content iframe {
     display: flex;
 
@@ -85,13 +95,6 @@
     /* Asegura que no haya espacio interno */
     width: 100%;
     /* Haz que ocupe todo el ancho disponible */
-  }
-
-  .Works__img-wrapper iframe {
-    width: 100%;
-    /* Ajusta el iframe para que sea totalmente responsivo */
-    height: auto;
-    /* Permite que se ajuste automáticamente */
   }
 }
 
@@ -204,7 +207,3 @@
   transition: transform .5s;
   transition: transform .5s, -webkit-transform .5s;
 }
-
-
-
-/*# sourceMappingURL=works.css.map */
