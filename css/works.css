@@ -64,10 +64,11 @@
 
 .video-container {
   position: relative;
-  width: 60%; /* El contenedor ocupa todo el ancho disponible */
+  width: 100%; /* El contenedor ocupa todo el ancho disponible */
   padding-bottom: 56.25%; /* Altura calculada para una relación de aspecto 16:9 */
   height: 0; /* El truco es establecer la altura en 0 */
   overflow: hidden;
+  
 }
 
 .video-container iframe {
@@ -83,8 +84,8 @@
 @media (max-width: 780px) {
 
   .video-container {
-    width: 90%;
-    padding-bottom: 100%; /* Cambiar la relación de aspecto si es necesario */
+    width: 100%;
+    padding-bottom: 500px; /* Cambiar la relación de aspecto si es necesario */
 }
 
   .Works__content iframe {
