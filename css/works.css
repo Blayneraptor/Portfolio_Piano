@@ -4,13 +4,13 @@
   align-items: center; /* Centra el contenido verticalmente */
   margin-bottom: 8rem; /* Mantiene el margen inferior */
   flex-wrap: wrap; /* Permite que el contenido se ajuste en múltiples líneas si es necesario */
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 
 @media (max-width: 780px) {
   .Works__content {
-    
+
     margin-right: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
