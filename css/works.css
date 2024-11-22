@@ -70,7 +70,7 @@
 .Works__img-wrapper {
   -webkit-perspective: 100rem;
   perspective: 100rem;
-  width: 0%;
+  width: 100%;
 
 }
 
