@@ -311,7 +311,7 @@
                     }
                 });
             });
-            // スムーススクロール
+
             $('a[href^="#"]').click(function () {
                 var speed = 400;
                 var href = $(this).attr("href");
@@ -322,18 +322,18 @@
             });
         });
 
-        // Loading PCのみ
-        if (window.matchMedia('(min-width: 779px)').matches) { //切り替える画面サイズ
+
+        if (window.matchMedia('(min-width: 779px)').matches) {
             $('.Loading__bar').animate({ 'width': 100 + '%' }, 3000, function () {
                 $(this).css({ 'left': 'auto', 'right': '0' }).animate({ 'width': '0%' }, 500, function () {
                     $('.Loading__up').delay(100).animate({ 'height': '0%' }, 625);
                     $('.Loading__down').delay(100).animate({ 'height': '0%' }, 625, function () {
                         $('#js-target').t({
-                            caret: true, //カーソル
-                            blink: false, //カーソルの点滅の有無
-                            blink_perm: false, //カーソルの点滅の継続
-                            repeat: 0, //繰り返し
-                            tag: 'span', //要素を内包するタグ
+                            caret: true,
+                            blink: false,
+                            blink_perm: false,
+                            repeat: 0,
+                            tag: 'span',
                             fin: function (elm) {
                                 $('.t-caret').css('opacity', 0);
                                 $('.Header__top-bar').animate({
