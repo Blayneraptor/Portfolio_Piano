@@ -12,6 +12,7 @@ Profile
   width: 100%;
 }
 
+
 @media (max-width: 780px) {
   .Profile__container {
     padding: 5rem 2rem; /* Reduce el padding para pantallas pequeñas */
@@ -46,6 +47,7 @@ Profile
       @media (max-width: 780px) {
         .Profile__body {
           padding: 0;
+          
         }
       }
       
