@@ -21,6 +21,7 @@
     flex-flow: row wrap-reverse;
     transform: scale(1.0);
     margin-bottom: 100px;
+    margin-top:0px;
   }
 }
 
