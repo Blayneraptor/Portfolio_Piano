@@ -1,18 +1,12 @@
 .Works__content {
-
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  margin-bottom: 8rem;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  display: flex; /* Mantiene el uso de flexbox */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  margin-bottom: 8rem; /* Mantiene el margen inferior */
+  flex-wrap: wrap; /* Permite que el contenido se ajuste en múltiples líneas si es necesario */
+  transform: scale(1.1);
 }
+
 
 @media (max-width: 780px) {
   .Works__content {
@@ -24,6 +18,7 @@
     flex-direction: column;
     -ms-flex-flow: row wrap-reverse;
     flex-flow: row wrap-reverse;
+    transform: scale(1.0);
   }
 }
 
@@ -32,6 +27,7 @@
   flex-direction: row; /* Lado a lado en pantallas grandes */
   justify-content: space-between;
   gap: 20px;
+  
 }
 
 @media (max-width: 768px) {
