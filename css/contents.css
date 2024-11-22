@@ -10,11 +10,13 @@
   position: relative;
   display: inline-block;
   margin-bottom: 8rem;
+  transform: translateX(70px); /* Mueve el elemento 70px hacia la derecha */
 }
 
 @media (max-width: 780px) {
   .Contents__head {
     font-size: 6rem;
+    transform: translateX(0px); /* Mueve el elemento 70px hacia la derecha */
   }
 }
 
