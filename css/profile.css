@@ -22,6 +22,15 @@ Profile
   hyphens: none; /* Evita guiones automáticos */
 }
 
+.Profile__body {
+  font-size: 3rem; /* Aumenta el tamaño de la fuente del párrafo */
+  padding: 4rem;
+  word-wrap: break-word; /* Permite que las palabras largas se ajusten en la siguiente línea */
+  overflow-wrap: break-word; /* Para asegurar que no se corten las palabras */
+  hyphens: auto; /* Añadido para permitir la división automática de palabras */
+  word-break: normal; /* Evita romper palabras en cualquier punto */
+}
+
 .Profile__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,13 +43,7 @@ Profile
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; } }
 
-      .Profile__body {
-        font-size: 3rem; /* Aumenta el tamaño de la fuente del párrafo */
-        padding: 4rem;
-        word-wrap: break-word; /* Permite que las palabras largas se ajusten en la siguiente línea */
-        overflow-wrap: break-word; /* Para asegurar que no se corten las palabras */
-        hyphens: auto; /* Añadido para permitir la división automática de palabras */
-      }
+    
       
       @media (max-width: 780px) {
         .Profile__body {
