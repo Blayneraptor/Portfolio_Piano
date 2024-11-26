@@ -2,26 +2,44 @@
 Profile
 \------------------------------------*/
 .Profile__container {
-  padding: 10rem 5rem;
+  padding: 10rem 5rem; /* Padding para escritorio */
   background: #dde4e8;
   color: #333;
   margin-bottom: 12rem;
   box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total del contenedor */
   width: 100%;
+  word-break: keep-all; /* Evita romper palabras */
+  overflow-wrap: normal; /* Respeta las palabras largas */
+  hyphens: none; /* Evita guiones automáticos */
 }
-
 
 @media (max-width: 780px) {
   .Profile__container {
     padding: 5rem 2rem; /* Reduce el padding para pantallas pequeñas */
   }
 }
-.Profile__container {
-  word-break: keep-all; /* Evita romper palabras */
-  overflow-wrap: normal; /* Respeta las palabras largas */
-  hyphens: none; /* Evita guiones automáticos */
+
+
+<<<<<<< HEAD
+=======
+.Profile__body {
+  font-size: 3rem; /* Aumenta el tamaño de la fuente del párrafo */
+  padding: 4rem;
+  word-wrap: break-word; /* Permite que las palabras largas se ajusten en la siguiente línea */
+  overflow-wrap: break-word; /* Para asegurar que no se corten las palabras */
+  hyphens: auto; /* Añadido para permitir la división automática de palabras */
+  word-break: normal; /* Evita romper palabras en cualquier punto */
+}
+.Profile__body h3 {
+  font-weight: bold;
+  font-size: 3.5rem; /* Ajusta el tamaño según tus necesidades */
 }
 
+.Profile__body p:first-of-type {
+  color: rgb(110, 161, 159);
+}
+
+>>>>>>> 93748b805b440adbb51f040e131314e82de250f0
 .Profile__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
