@@ -89,6 +89,8 @@
 }
 
 .Header__item a {
+  position: relative; /* Para permitir que z-index funcione */
+  z-index: 10; /* Asegura que el enlace esté por encima de otros elementos */
   font-size: 3.5rem;
   /* Cambia el tamaño según lo que desees */
   display: inline-block;
@@ -135,11 +137,13 @@
   left: 90%;
   -webkit-animation: huwahuwa 2s infinite alternate linear;
   animation: huwahuwa 2s infinite alternate linear;
+  
 }
 
 .Header__arrow a {
   display: block;
   cursor: pointer;
+  
 }
 
 .Header__arrow i {
