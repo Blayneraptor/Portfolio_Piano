@@ -35,40 +35,6 @@
   }
 }
 
-.Header__top-bar {
-  position: fixed;
-  top: 0;
-  background-color: #738396;
-  width: 100%;
-  z-index: 100;
-}
-
-.Header__right-bar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: #738396;
-  height: 100%;
-  z-index: 100;
-}
-
-.Header__bottom-bar {
-  position: fixed;
-  bottom: 0;
-  background-color: #738396;
-  width: 100%;
-  z-index: 100;
-}
-
-.Header__left-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #738396;
-  height: 100%;
-  z-index: 100;
-}
-
 .Header__list {
   position: absolute;
   top: 4rem;
