@@ -2,7 +2,12 @@
 Footer
 \------------------------------------*/
 .Footer {
-  text-align: center; }
+  text-align: center;
+}
+.Footer a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: inherit; /* Hace que el color del enlace sea el mismo que el texto del contenedor (en este caso, negro) */
+}
   .Footer__copy {
     color: #000;
     padding: 1rem 0;
@@ -15,10 +20,16 @@ Footer
     -ms-flex-pack: center;
     justify-content: center; }
   .Footer__item {
+    
     padding: 0 4rem;
-    color: #000000; }
+    color: #66c2ba; 
+    font-size: 2rem; /* Tamaño de fuente para escritorio */
+  }
     @media (max-width: 780px) {
       .Footer__item {
-        padding: 0 1rem; } }
+        padding: 0 1rem;
+        font-size: 1.2rem; /* Tamaño de fuente para móvil (más pequeño) */
+     } }
+        
 
 /*# sourceMappingURL=footer.css.map */
