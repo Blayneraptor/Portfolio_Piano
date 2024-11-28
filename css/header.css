@@ -80,7 +80,6 @@
   color: #dadada;
   font-size: 2.4rem;
   font-family: 'Italianno', cursive;
-
   font-stretch: condensed;
   font-weight: bold;
 }
@@ -96,6 +95,7 @@
   color: #DADADA;
   text-decoration: none;
 }
+
 
 .Header__item a:hover {
   color: #9df7f1;
