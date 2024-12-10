@@ -29,7 +29,19 @@
     <header class="Header">
         <ul class="Header__list">
             <li class="Header__item">
-                <a href="#works">Canciones</a>
+                <a href="#" id="canciones-link">Canciones</a>
+                <ul class="canciones-list">
+                    <li><a href="#cancion1">Howl's Moving Merry go Round</a></li>
+                    <li><a href="#cancion2">Empty Core 1</a></li>
+                    <li><a href="#cancion3">Love Story</a></li>
+                    <li><a href="#cancion4">Canción 4</a></li>
+                    <li><a href="#cancion5">Canción 5</a></li>
+                    <li><a href="#cancion6">Canción 6</a></li>
+                    <li><a href="#cancion7">Canción 7</a></li>
+                    <li><a href="#cancion8">Canción 8</a></li>
+                    <li><a href="#cancion9">Canción 9</a></li>
+                    <li><a href="#cancion10">Canción 10</a></li>
+                </ul>
             </li>
             <li class="Header__item">
                 <a href="#profile">Perfil</a>
@@ -58,7 +70,7 @@
     <!--Contents-->
     <div class="Contents">
         <!--Works-->
-        <section id="works" class="Works l-width">
+        <section id="cancion1" class="Works l-width">
             <h2 class="Contents__head">Canciones</h2>
             <ul>
                 <!-- Primer video con texto y diseño responsivo -->
@@ -93,8 +105,12 @@
                         </div>
                     </article>
                 </li>
-
+                </ul>
+            </section>
+            <section id="cancion2" class="Works 1-width">
+                <h2 class="Contents__head2"></h2>
                 <!-- Segundo video con texto y diseño responsivo -->
+                <ul>
                 <li>
                     <article class="Works__content">
                         <div class="Works__body">
@@ -103,8 +119,7 @@
                                 <p class="Works__lead">Empty Core 1</p>
                                 <div class="content-expanded">
                                     <span>Estribillo de la canción de la película</span>
-                                    <p><a href="https://www.youtube.com/watch?v=MZiK2P7eBJ4" target="_blank">Empty Core
-                                            1</a></p>
+                                    <p><a href="https://www.youtube.com/watch?v=MZiK2P7eBJ4" target="_blank">Empty Core 1</a></p>
                                 </div>
                                 <div class="content-expanded">
                                     <h4>Empty Core 1</h4>
@@ -128,10 +143,10 @@
                 </li>
             </ul>
         </section>
-        <br>
-        <section id="works" class="Works l-width">
-            <ul>
+        <section id="cancion3" class="Works l-width">
+            <h2 class="Contents__head2"></h2>
                 <!-- Tercer video a la derecha -->
+                <ul>
                 <li>
                     <article class="Works__content">
                         <div class="Works__body">
@@ -161,8 +176,7 @@
                         </div>
                     </article>
                 </li>
-
-            </ul>
+                </ul>
         </section>
 
         <!--Profile-->
@@ -236,9 +250,8 @@
         <footer class="Footer l-width">
             <ul class="Footer__list">
                 <li class="Footer__item"><a href="#">Subir</a></li>
-                <li class="Footer__item"><a href="#works">Canciones</a></li>
+                <li class="Footer__item"><a href="#cancion1">Canciones</a></li>
                 <li class="Footer__item"><a href="#profile">Perfil</a></li>
-                <li class="Footer__item"><a href="#skill">Próximamente</a></li>
             </ul>
             <span class="Footer__copy">© 2024 José Pascual Couso Pérez</span>
         </footer>
@@ -346,6 +359,28 @@
     </script>
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cancionesLink = document.getElementById('canciones-link');
+            const cancionesList = document.querySelector('.canciones-list');
+        
+            cancionesLink.addEventListener('mouseover', function() {
+                cancionesList.style.display = 'block';
+            });
+        
+            cancionesLink.addEventListener('mouseout', function() {
+                setTimeout(function() {
+                    if (!cancionesList.matches(':hover')) {
+                        cancionesList.style.display = 'none';
+                    }
+                }, 200);
+            });
+        
+            cancionesList.addEventListener('mouseleave', function() {
+                cancionesList.style.display = 'none';
+            });
+        });
+        </script>
     <canvas class="particles-js-canvas-el" width="2880" height="780" style="width: 100%; height: 100%;"></canvas>
 </body>
 

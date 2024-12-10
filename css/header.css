@@ -72,22 +72,25 @@
 .canciones-list {
   display: none; /* Ocultar la lista por defecto */
   position: absolute;
-  top: 4rem; /* Ajusta la posición si es necesario */
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro para la lista */
+  top: 100%; /* Ajusta la posición si es necesario */
+  left: 8%;
+  background-color: rgba(8, 8, 8, 0.8); /* Fondo oscuro para la lista */
   padding: 1rem;
   border-radius: 5px;
   list-style-type: none;
   color: #fff;
+  z-index: 1000; /* Asegura que la lista esté por encima de otros elementos */
+  letter-spacing: 0.1rem;
 }
 
 .canciones-list li {
-  margin: 1rem 0;
+  margin: 3rem 0;
+  
 }
 
 .canciones-list li a {
   color: #DADADA;
-  font-size: 2.4rem;
+  font-size: 3.4rem;
   text-decoration: none;
 }
 
@@ -98,7 +101,7 @@
 /* Si quieres agregar un efecto de transición para la aparición */
 .canciones-list.show {
   display: block;
-  animation: fadeIn 0.5s ease;
+  animation: fadeIn 1.5s ease;
 }
 
 @keyframes fadeIn {
