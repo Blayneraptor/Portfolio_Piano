@@ -8,7 +8,6 @@
     width: 100%;
     height: auto; /* Cambia el tamaño de la imagen a la mitad del contenedor */
   }
-  
 }
 
 .Header {
@@ -58,23 +57,55 @@
   position: relative; /* Para permitir que z-index funcione */
   z-index: 10; /* Asegura que el enlace esté por encima de otros elementos */
   font-size: 4.5rem;
-  /* Cambia el tamaño según lo que desees */
   display: inline-block;
   color: #DADADA;
   text-decoration: none;
 }
 
-
 .Header__item a:hover {
   color: #9df7f1;
-  /* Cambia el color al pasar el ratón por encima */
   transform: scale(1.2);
-  /* Amplía el enlace al pasar el ratón por encima */
   transition: transform 0.2s ease, color 0.2s ease;
-  /* Añade una transición suave */
-
-
 }
+
+/* Estilos para la lista de canciones */
+.canciones-list {
+  display: none; /* Ocultar la lista por defecto */
+  position: absolute;
+  top: 4rem; /* Ajusta la posición si es necesario */
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro para la lista */
+  padding: 1rem;
+  border-radius: 5px;
+  list-style-type: none;
+  color: #fff;
+}
+
+.canciones-list li {
+  margin: 1rem 0;
+}
+
+.canciones-list li a {
+  color: #DADADA;
+  font-size: 2.4rem;
+  text-decoration: none;
+}
+
+.canciones-list li a:hover {
+  color: #9df7f1;
+}
+
+/* Si quieres agregar un efecto de transición para la aparición */
+.canciones-list.show {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 .Header__title {
   position: relative;
   top: 6.25rem;
@@ -91,7 +122,6 @@
   font-family: 'Fredericka the Great', cursive;
   color: white;
   text-shadow: 4px 4px 2px black;
-  /* Añade un sombreado negro */
 }
 
 .Header__arrow {
@@ -103,13 +133,11 @@
   left: 90%;
   -webkit-animation: huwahuwa 2s infinite alternate linear;
   animation: huwahuwa 2s infinite alternate linear;
-  
 }
 
 .Header__arrow a {
   display: block;
   cursor: pointer;
-  
 }
 
 .Header__arrow i {
