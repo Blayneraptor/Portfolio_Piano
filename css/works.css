@@ -68,6 +68,7 @@
   height: 0; /* El truco es establecer la altura en 0 */
   overflow: hidden;
   margin-top: 2rem; /* Ajusta este valor según sea necesario */
+  margin-left:20rem;
 }
 
 .video-container iframe {
@@ -79,6 +80,20 @@
   border: 0; /* Elimina bordes */
 }
 
+.video-right {
+  margin-left: 11rem; /* Añade un margen izquierdo para separar el video del texto */
+  width: 100%; /* Ajusta el ancho del video */
+  margin-right: 2rem;
+}
+
+@media (max-width: 780px) {
+  .video-right {
+    margin-left: 0; /* Restablece el margen izquierdo en pantallas pequeñas */
+    width: 100%; /* Asegura que el video ocupe todo el ancho disponible en pantallas pequeñas */
+    margin-right:0;
+  }
+}
+
 
 @media (max-width: 780px) {
 
@@ -87,6 +102,7 @@
     padding-bottom: 500px; /* Cambiar la relación de aspecto si es necesario */
     margin-top:0px;
     margin-bottom:-90px;
+    margin-left:0;
 }
 
   .Works__content iframe {

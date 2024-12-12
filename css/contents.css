@@ -137,8 +137,33 @@
 
 .castle-image {
   
-  width: 90%; /* Ajusta el ancho de la imagen */
-  height: 60%; /* Mantiene la proporción de la imagen */
+  width: 100%; /* Ajusta el ancho de la imagen */
+  height: 44.5rem; /* Mantiene la proporción de la imagen */
   margin-top: 1rem; /* Añade un margen superior para separar la imagen del texto */
   border-radius: 5px; /* Añade bordes redondeados a la imagen */
 }
+
+.bosque-image {
+  width: 90%; /* Ajusta el ancho de la imagen */
+  height: 44.5rem; /* Mantiene la proporción de la imagen */
+  margin-top: 1rem; /* Añade un margen superior para separar la imagen del texto */
+  border-radius: 5px; /* Añade bordes redondeados a la imagen */
+}
+
+.bosque-hielo {
+  width: 99%; /* Ajusta el ancho de la imagen */
+  height: 44rem; /* Mantiene la proporción de la imagen */
+  margin-top: 1rem; /* Añade un margen superior para separar la imagen del texto */
+  border-radius: 5px; /* Añade bordes redondeados a la imagen */
+}
+
+
+.text-content {
+  
+  padding: 0rem; /* Ajusta el padding según sea necesario */
+  margin-bottom: 2rem; /* Ajusta el margen inferior según sea necesario */
+  color: #333; /* Color del texto */
+  font-size: 1.6rem; /* Tamaño de la fuente */
+  line-height: 1.5; /* Altura de línea */
+}
+
