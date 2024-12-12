@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es" style="overflow-x: hidden;">
+
 <head>
     <meta charset="UTF-8">
     <title>PortfolioCouso</title>
@@ -56,6 +57,7 @@
                 <br>
                 &nbsp;&nbsp;&nbsp;&nbsp;Piano Covers
             </div>
+            </div>
         </h1>
         <div class="Header__arrow">
             <a href="#cancion1">
@@ -81,16 +83,14 @@
                             <div class="text-content">
                                 <p class="Works__lead">Howl's Moving Castle</p>
                                 <div class="content-expanded">
-                                    <span>Estribillo de la canción de la película</span>
-                                    <p><a href="https://es.wikipedia.org/wiki/Howl_no_Ugoku_Shiro" target="_blank" rel="noopener noreferrer">
-                                            El castillo ambulante</a></p>
+                                    <span>Interpretación del estribillo de "Merry-Go-Round of Life"</span>
                                 </div>
-                                <div class="content-expanded">
+                                <div class="content-expanded elemento">
                                     <h4>El Castillo Ambulante</h4>
-                                    <p>En este video interpreto el estribillo de una hermosa pieza compuesta por Joe
-                                        Hisaishi para la película homónima de Studio Ghibli.</p>
-                                    <p>La película, dirigida por Hayao Miyazaki, nos transporta a un mundo mágico lleno
-                                        de aventuras...</p>
+                                    <p>En este video interpreto el estribillo de una hermosa pieza compuesta por <span>Joe
+                                        Hisaishi</span> para la película homónima de <span>Studio Ghibli</span>.                                       
+                                        La película, dirigida por Hayao Miyazaki, nos transporta a un mundo mágico lleno
+                                        de aventuras.</p>
                                 </div>
                             </div>
 
@@ -105,12 +105,12 @@
                         </div>
                     </article>
                 </li>
-                </ul>
-            </section>
-            <section id="cancion2" class="Works l-width">
-                <h2 class="Contents__head2"></h2>
-                <!-- Segundo video con texto y diseño responsivo -->
-                <ul>
+            </ul>
+        </section>
+        <section id="cancion2" class="Works l-width">
+            <h2 class="Contents__head2"></h2>
+            <!-- Segundo video con texto y diseño responsivo -->
+            <ul>
                 <li>
                     <article class="Works__content">
                         <div class="Works__body">
@@ -118,15 +118,16 @@
                             <div class="text-content">
                                 <p class="Works__lead">Empty Core 1</p>
                                 <div class="content-expanded">
-                                    <span>Estribillo de la canción de la película</span>
-                                    <p><a href="https://www.youtube.com/watch?v=MZiK2P7eBJ4" target="_blank" rel="noopener noreferrer">Empty Core 1</a></p>
+                                    <span>Interpretación de la canción "Empty Core 1"</span>
+                                    
                                 </div>
-                                <div class="content-expanded">
+                                <div class="content-expanded elemento">
                                     <h4>Empty Core 1</h4>
-                                    <p>En este video interpreto el estribillo de una hermosa pieza compuesta por Joe
-                                        Hisaishi para la película homónima de Studio Ghibli.</p>
-                                    <p>La película, dirigida por Hayao Miyazaki, nos transporta a un mundo mágico lleno
-                                        de aventuras..
+                                    <p>La canción <span>"Empty Core 1"</span>, creada por <span>Tomy Sauvestre</span>, está inspirada en la
+                                        emotiva pieza "Drowning Love".
+                                        En este video, interpreto el estribillo de esta composición única,
+                                        que captura la melancolía y la belleza de la obra original, pero con un enfoque
+                                        personal y renovado.
                                     </p>
                                 </div>
                             </div>
@@ -145,8 +146,8 @@
         </section>
         <section id="cancion3" class="Works l-width">
             <h2 class="Contents__head2"></h2>
-                <!-- Tercer video a la derecha -->
-                <ul>
+            <!-- Tercer video a la derecha -->
+            <ul>
                 <li>
                     <article class="Works__content">
                         <div class="Works__body">
@@ -155,14 +156,13 @@
                                 <p class="Works__lead">Love Story</p>
                                 <div class="content-expanded">
                                     <span>Estribillo de la canción de la película</span>
-                                    <p><a href="https://www.youtube.com/watch?v=MZiK2P7eBJ4" target="_blank" rel="noopener noreferrer">Love
-                                            Story</a></p>
+                                    
                                 </div>
-                                <div class="content-expanded">
+                                <div class="content-expanded elemento">
                                     <h4>Love Story</h4>
                                     <p>En este video interpreto el estribillo de una hermosa pieza compuesta por Joe
-                                        Hisaishi para la película homónima de Studio Ghibli.</p>
-                                    <p>La película, dirigida por Hayao Miyazaki, nos transporta a un mundo mágico lleno
+                                        Hisaishi para la película homónima de Studio Ghibli.                                       
+                                        La película, dirigida por Hayao Miyazaki, nos transporta a un mundo mágico lleno
                                         de aventuras...</p>
                                 </div>
                             </div>
@@ -176,7 +176,7 @@
                         </div>
                     </article>
                 </li>
-                </ul>
+            </ul>
         </section>
 
         <!--Profile-->
@@ -360,27 +360,27 @@
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const cancionesLink = document.getElementById('canciones-link');
             const cancionesList = document.querySelector('.canciones-list');
-        
-            cancionesLink.addEventListener('mouseover', function() {
+
+            cancionesLink.addEventListener('mouseover', function () {
                 cancionesList.style.display = 'block';
             });
-        
-            cancionesLink.addEventListener('mouseout', function() {
-                setTimeout(function() {
+
+            cancionesLink.addEventListener('mouseout', function () {
+                setTimeout(function () {
                     if (!cancionesList.matches(':hover')) {
                         cancionesList.style.display = 'none';
                     }
                 }, 200);
             });
-        
-            cancionesList.addEventListener('mouseleave', function() {
+
+            cancionesList.addEventListener('mouseleave', function () {
                 cancionesList.style.display = 'none';
             });
         });
-        </script>
+    </script>
     <canvas class="particles-js-canvas-el" width="2880" height="780" style="width: 100%; height: 100%;"></canvas>
 </body>
 
