@@ -26,7 +26,7 @@
   .Contents__head {
     font-size: 6rem;
     transform: translateX(0px); /* Mueve el elemento 70px hacia la derecha */
-    margin-top:-10rem;
+    margin-top:2rem;
   }
 }
 
@@ -135,3 +135,10 @@
 
 /*# sourceMappingURL=contents.css.map */
 
+.castle-image {
+  
+  width: 90%; /* Ajusta el ancho de la imagen */
+  height: 60%; /* Mantiene la proporción de la imagen */
+  margin-top: 1rem; /* Añade un margen superior para separar la imagen del texto */
+  border-radius: 5px; /* Añade bordes redondeados a la imagen */
+}

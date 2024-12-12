@@ -8,11 +8,13 @@ Profile
   margin-bottom: 12rem;
   box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total del contenedor */
   width: 100%;
+ 
 }
 
 
 @media (max-width: 780px) {
   .Profile__container {
+    
     padding: 5rem 2rem; /* Reduce el padding para pantallas pequeñas */
   }
 }

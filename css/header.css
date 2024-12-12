@@ -5,8 +5,8 @@
 @media (max-width: 780px) {
   .Header-sp {
     display: block;
-    width: 100%;
-    height: auto; /* Cambia el tamaño de la imagen a la mitad del contenedor */
+    width: 36rem;
+    height: 31rem; /* Cambia el tamaño de la imagen a la mitad del contenedor */
   }
 }
 
