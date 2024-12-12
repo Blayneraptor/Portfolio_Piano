@@ -9,8 +9,8 @@
   font-family: 'Fredericka the Great', cursive;
   position: relative;
   display: inline-block;
-  margin-bottom: 8rem;
-  transform: translateX(80px); /* Mueve el elemento 70px hacia la derecha */
+  margin-bottom: 6rem;
+  transform: translateX(-150px); /* Mueve el elemento 70px hacia la derecha */
 }
 
 .Contents__head2 {
@@ -26,6 +26,7 @@
   .Contents__head {
     font-size: 6rem;
     transform: translateX(0px); /* Mueve el elemento 70px hacia la derecha */
+    margin-top:-10rem;
   }
 }
 
@@ -81,6 +82,7 @@
   /* Permite que las palabras largas se ajusten en la siguiente línea */
   overflow-wrap: break-word;
   /* Asegura que no se corten las palabras */
+  
 }
 
 /* Estilo para el texto en cursiva dentro del párrafo */
