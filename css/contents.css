@@ -58,6 +58,7 @@
   /* Permite que las palabras largas se ajusten en la siguiente línea */
   overflow-wrap: break-word;
   /* Asegura que no se corten las palabras */
+  
 }
 
 /* Aumentar el tamaño del h4 */
