@@ -40,25 +40,29 @@ h4 {
   z-index: -2; }
 
 
-.fadein {
-  opacity: 0;
-  -webkit-transform: translate(0, 80px);
-  transform: translate(0, 80px);
-  -webkit-transition: all 800ms;
-  transition: all 800ms; }
-
-.fadein.right {
-  -webkit-transform: translate(80px, 0);
-  transform: translate(80px, 0); }
-
-.fadein.left {
-  -webkit-transform: translate(-80px, 0);
-  transform: translate(-80px, 0); }
-
-.fadein.top {
-  -webkit-transform: translate(0, -80px);
-  transform: translate(0, -80px); }
-
+  .fadein {
+    opacity: 0;
+    -webkit-transform: translate(0, 5rem);
+    transform: translate(0, 5rem);
+    -webkit-transition: all 800ms;
+    transition: all 800ms;
+  }
+  
+  .fadein.right {
+    -webkit-transform: translate(5rem, 0);
+    transform: translate(5rem, 0);
+  }
+  
+  .fadein.left {
+    -webkit-transform: translate(-5rem, 0);
+    transform: translate(-5rem, 0);
+  }
+  
+  .fadein.top {
+    -webkit-transform: translate(0, -5rem);
+    transform: translate(0, -5rem);
+  }
+  
 .fadein.scrollin, .fadein.inright.scrollin, .fadein.left.scrollin, .fadein.top.scrollin {
   opacity: 1;
   -webkit-transform: translate(0, 0);
