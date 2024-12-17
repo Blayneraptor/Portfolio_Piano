@@ -51,10 +51,11 @@ Profile
         }
       }
       
-.Profile__img {
-  -webkit-filter: drop-shadow(-11px -2px 26px rgba(0, 0, 0, 0.14));
-  filter: drop-shadow(-11px -2px 26px rgba(0, 0, 0, 0.14));
-  text-align: center; }
+      .Profile__img {
+        -webkit-filter: drop-shadow(-0.6875rem -0.125rem 1.625rem rgba(0, 0, 0, 0.14));
+        filter: drop-shadow(-0.6875rem -0.125rem 1.625rem rgba(0, 0, 0, 0.14));
+        text-align: center;
+      }
   @media (max-width: 780px) {
     .Profile__img {
       width: 100%;
