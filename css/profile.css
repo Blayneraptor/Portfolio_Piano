@@ -6,20 +6,26 @@ Profile
   background: #c6cdd1;
   color: #333;
   margin-bottom: 12rem;
-  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total del contenedor */
+  box-sizing: border-box;
+  /* Asegura que el padding no afecte el tamaño total del contenedor */
   width: 100%;
 }
 
 
 @media (max-width: 780px) {
   .Profile__container {
-    padding: 5rem 2rem; /* Reduce el padding para pantallas pequeñas */
+    padding: 5rem 2rem;
+    /* Reduce el padding para pantallas pequeñas */
   }
 }
+
 .Profile__container {
-  word-break: normal; /* Evita romper las palabras innecesariamente */
-  overflow-wrap: break-word; /* Permite que las palabras largas se ajusten en la siguiente línea */
-  hyphens: none; /* Evita la separación automática de palabras con guiones */
+  word-break: normal;
+  /* Evita romper las palabras innecesariamente */
+  overflow-wrap: break-word;
+  /* Permite que las palabras largas se ajusten en la siguiente línea */
+  hyphens: none;
+  /* Evita la separación automática de palabras con guiones */
 }
 
 .Profile__wrapper {
@@ -28,35 +34,49 @@ Profile
   display: flex;
   -webkit-box-align: start;
   -ms-flex-align: start;
-  align-items: flex-start; }
-  @media (max-width: 780px) {
-    .Profile__wrapper {
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap; } }
+  align-items: flex-start;
+}
 
-      .Profile__body {
-        font-size: 3rem; /* Aumenta el tamaño de la fuente del párrafo */
-        padding: 4rem;
-        word-wrap: break-word; /* Permite que las palabras largas se ajusten en la siguiente línea */
-        overflow-wrap: break-word; /* Para asegurar que no se corten las palabras */
-        hyphens: auto; /* Añadido para permitir la división automática de palabras */
-      }
-      
-      @media (max-width: 780px) {
-        .Profile__body {
-          padding: 0;
-          
-        }
-      }
-      
-      .Profile__img {
-        -webkit-filter: drop-shadow(-0.6875rem -0.125rem 1.625rem rgba(0, 0, 0, 0.14));
-        filter: drop-shadow(-0.6875rem -0.125rem 1.625rem rgba(0, 0, 0, 0.14));
-        text-align: center;
-      }
-  @media (max-width: 780px) {
-    .Profile__img {
-      width: 100%;
-      margin-bottom: 4rem; } }
+@media (max-width: 780px) {
+  .Profile__wrapper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+.Profile__body {
+  font-size: 3rem;
+  /* Aumenta el tamaño de la fuente del párrafo */
+  padding: 4rem;
+  word-wrap: break-word;
+  /* Permite que las palabras largas se ajusten en la siguiente línea */
+  overflow-wrap: break-word;
+  /* Para asegurar que no se corten las palabras */
+  hyphens: auto;
+  /* Añadido para permitir la división automática de palabras */
+}
+
+@media (max-width: 780px) {
+  .Profile__body {
+    padding: 0;
+    font-size: 2rem;
+  }
+}
+
+.Profile__img {
+  -webkit-filter: drop-shadow(-0.6875rem -0.125rem 1.625rem rgba(0, 0, 0, 0.14));
+  filter: drop-shadow(-0.6875rem -0.125rem 1.625rem rgba(0, 0, 0, 0.14));
+  text-align: center;
+  width: 20%;
+  height: 20%;
+}
+
+@media (max-width: 780px) {
+  .Profile__img {
+    width: 80%;
+    margin-bottom: 4rem;
+    margin-left: 2.5rem;
+  }
+}
 
 /*# sourceMappingURL=profile.css.map */
