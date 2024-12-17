@@ -2,10 +2,10 @@
   display: flex; /* Mantiene el uso de flexbox */
   justify-content: center; /* Centra el contenido horizontalmente */
   align-items: center; /* Centra el contenido verticalmente */
-  margin-bottom: 300px; /* Mantiene el margen inferior */
+  margin-bottom: 18.75rem; /* Mantiene el margen inferior */
   flex-wrap: wrap; /* Permite que el contenido se ajuste en múltiples líneas si es necesario */
   transform: scale(1.2);
-  margin-top:80px;
+  margin-top:5rem;
 }
 
 
@@ -20,8 +20,8 @@
     -ms-flex-flow: row wrap-reverse;
     flex-flow: row wrap-reverse;
     transform: scale(1.0);
-    margin-bottom: 100px;
-    margin-top:0px;
+    margin-bottom: 10rem;
+    margin-top:0rem;
   }
 }
 
@@ -29,11 +29,12 @@
   display: flex;
   flex-direction: row; /* Lado a lado en pantallas grandes */
   justify-content: space-between;
-  gap: 20px;
+  gap: 1.25rem;
+
   
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   .Works__body {
       flex-direction: column; /* Apilar elementos en pantallas pequeñas */
       align-items: center;
@@ -55,9 +56,8 @@
 }
 @media (max-width: 780px) {
   .Works__lead {
-    margin-top:-50px;
-    font-size: 35px;
-    
+  margin-top: -5rem;
+  font-size: 4rem;
 }
 }
 
@@ -98,17 +98,17 @@
 @media (max-width: 780px) {
 
   .video-container {
-    width: 100%;
-    padding-bottom: 500px; /* Cambiar la relación de aspecto si es necesario */
-    margin-top:0px;
-    margin-bottom:-90px;
-    margin-left:0;
+    width: 100%; /* No se necesita conversión */
+    padding-bottom: 50rem;
+    margin-top: 0rem;
+    margin-bottom: -10rem;
+    margin-left: 0rem;
 }
 
   .Works__content iframe {
     display: flex;
     /* Elimina cualquier margen izquierdo */
-    padding-left: 0px;
+    padding-left: 0rem;
     /* Asegura que no haya espacio interno */
     width: 100%;
     /* Haz que ocupe todo el ancho disponible */
