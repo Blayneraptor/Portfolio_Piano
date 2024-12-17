@@ -8,7 +8,7 @@ Loading
   top: 0;
   left: 0; }
   .Loading__bar {
-    height: 1px;
+    height: 0.0625rem;
     position: fixed;
     top: 50%;
     left: 0;

@@ -76,7 +76,7 @@
   left: 8%;
   background-color: rgba(8, 8, 8, 0.8); /* Fondo oscuro para la lista */
   padding: 1rem;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   list-style-type: none;
   color: #fff;
   z-index: 1000; /* Asegura que la lista esté por encima de otros elementos */
@@ -124,7 +124,7 @@
   font-size: 12rem;
   font-family: 'Fredericka the Great', cursive;
   color: white;
-  text-shadow: 4px 4px 2px black;
+  text-shadow: 0.25rem 0.25rem 0.125rem black;
 }
 
 .Header__arrow {

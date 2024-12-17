@@ -169,3 +169,12 @@
   line-height: 1.5; /* Altura de línea */
 }
 
+@media (max-width: 780px) {
+  .fadein.left {
+    -webkit-transform: none !important;
+    transform: none !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+  }
+}

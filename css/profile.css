@@ -8,20 +8,18 @@ Profile
   margin-bottom: 12rem;
   box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total del contenedor */
   width: 100%;
- 
 }
 
 
 @media (max-width: 780px) {
   .Profile__container {
-    
     padding: 5rem 2rem; /* Reduce el padding para pantallas pequeñas */
   }
 }
 .Profile__container {
-  word-break: keep-all; /* Evita romper palabras */
-  overflow-wrap: normal; /* Respeta las palabras largas */
-  hyphens: none; /* Evita guiones automáticos */
+  word-break: normal; /* Evita romper las palabras innecesariamente */
+  overflow-wrap: break-word; /* Permite que las palabras largas se ajusten en la siguiente línea */
+  hyphens: none; /* Evita la separación automática de palabras con guiones */
 }
 
 .Profile__wrapper {
