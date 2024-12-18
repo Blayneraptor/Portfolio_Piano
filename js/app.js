@@ -1,10 +1,10 @@
 particlesJS('particles-js', {
     "particles": {
         "number": {
-            "value": 10,  // Número de hojas de cerezo
+            "value": 3,  // Número de hojas de cerezo
             "density": {
                 "enable": true,
-                "value_area": 800  // Área donde se distribuyen las hojas
+                "value_area": 1200  // Área donde se distribuyen las hojas
             }
         },
         "color": {
@@ -29,7 +29,7 @@ particlesJS('particles-js', {
             }
         },
         "size": {
-            "value": 60,  // Tamaño de las hojas de cerezo
+            "value": 90,  // Tamaño de las hojas de cerezo
             "random": true,  // Tamaño aleatorio para dar variedad
             "anim": {
                 "enable": false,
@@ -39,7 +39,7 @@ particlesJS('particles-js', {
             }
         },
         "line_linked": {
-            "enable": true,
+            "enable": false,
             "distance": 150,
             "color": "#dddddd",
             "opacity": 0.5,
@@ -100,4 +100,5 @@ particlesJS('particles-js', {
         }
     },
     "retina_detect": true
+    
 });
