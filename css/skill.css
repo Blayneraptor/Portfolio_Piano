@@ -12,30 +12,38 @@ Skill
     -ms-flex-align: center;
     align-items: flex-start;
    }
-    @media (max-width: 780px) {
-      .Skill__wrapper {
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        text-align: center; } }
-  @media (max-width: 780px) {
-    .Skill__img {
+   @media (max-width: 780px) {
+    .Skill__wrapper {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
       text-align: center;
-      -webkit-transform: translateX(-10%);
-      transform: translateX(-10%); } }
-  .Skill__info {
-    margin-left: 2rem;
-    border-radius: 1rem;
-    padding: 2rem; }
-    @media (max-width: 780px) {
-      .Skill__info {
-        margin-left: 0;
-        padding: 2rem 0; } }
-  .Skill__head {
-    margin-bottom: 2rem;
-    font-weight: bold;
-    font-size: 3rem;
-    color: #86b7f2; }
-  .Skill__score {
-    font-size: 2.4rem; }
-
-/*# sourceMappingURL=skill.css.map */
+    }
+  
+    .Skill__img {
+      display: flex; /* Habilita flexbox */
+      justify-content: center; /* Centra horizontalmente */
+      align-items: center; /* Centra verticalmente */
+      margin: 0 auto; /* Asegura que el PNG esté centrado en el contenedor */
+      transform: none; /* Elimina el desplazamiento existente */
+    }
+  
+    .Skill__info {
+      margin-left: 0;
+      padding: 2rem 0;
+      text-align: center; /* Centra el contenido de texto */
+    }
+  
+    .Skill__head {
+      margin-bottom: 2rem;
+      font-weight: bold;
+      font-size: 2.5rem;
+      color: #86b7f2;
+    }
+  
+    .Skill__score {
+      font-size: 2.4rem;
+    }
+  }
+  
+  /*# sourceMappingURL=skill.css.map */
+  

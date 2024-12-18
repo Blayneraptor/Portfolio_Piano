@@ -26,9 +26,10 @@
 
 @media (max-width: 780px) {
   .Contents__head {
-    font-size: 6rem;
+    font-size: 4rem;
     transform: translateX(0rem); /* Mueve el elemento 70px hacia la derecha */
     margin-top:2rem;
+    
   }
 }
 
