@@ -12,11 +12,22 @@ Skill
     -ms-flex-align: center;
     align-items: flex-start;
    }
+   .Skill__info {
+    margin-top: 3rem;
+    margin-left: 4rem;
+    padding: 2rem 0;
+    text-align: left; /* Centra el contenido de texto */
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+
+   
    @media (max-width: 780px) {
     .Skill__wrapper {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
       text-align: center;
+      
     }
   
     .Skill__img {
@@ -25,25 +36,34 @@ Skill
       align-items: center; /* Centra verticalmente */
       margin: 0 auto; /* Asegura que el PNG esté centrado en el contenedor */
       transform: none; /* Elimina el desplazamiento existente */
+      width: 50%;
+      height: 40%;
+      margin-left: 6rem;
+      margin-bottom: 0rem;
     }
   
     .Skill__info {
       margin-left: 0;
-      padding: 2rem 0;
+      padding: 1rem;
       text-align: center; /* Centra el contenido de texto */
+      font-size: 1.7rem;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+      
     }
   
     .Skill__head {
       margin-bottom: 2rem;
       font-weight: bold;
       font-size: 2.5rem;
-      color: #86b7f2;
+      color: #2d2f31;
+      
     }
   
     .Skill__score {
       font-size: 2.4rem;
+      
     }
-  }
+   }
   
   /*# sourceMappingURL=skill.css.map */
   
