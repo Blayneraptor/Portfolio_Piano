@@ -22,7 +22,7 @@ Footer
   .Footer__item {
     
     padding: 0 4rem;
-    color: #66c2ba; 
+    color: #7eb5cf; 
     font-size: 2rem; /* Tamaño de fuente para escritorio */
   }
     @media (max-width: 780px) {
