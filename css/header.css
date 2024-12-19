@@ -7,6 +7,7 @@
     display: block;
     width: 36rem;
     height: 31rem; /* Cambia el tamaño de la imagen a la mitad del contenedor */
+    
   }
 }
 
@@ -17,6 +18,7 @@
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
+  box-shadow: 0 30px 20px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22); /* Sombra decorativa */
   /*------------------------------------*\
   fixed bar
   \------------------------------------*/
@@ -31,6 +33,7 @@
 @media (max-width: 780px) {
   .Header {
     display: none;
+    
   }
 }
 

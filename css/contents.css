@@ -144,6 +144,7 @@
   height: 44.5rem; /* Mantiene la proporción de la imagen */
   margin-top: 1rem; /* Añade un margen superior para separar la imagen del texto */
   border-radius: 0.3125rem; /* Añade bordes redondeados a la imagen */
+  box-shadow: 30px 30px 5px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22); /* Sombra decorativa */
 }
 
 .bosque-image {
