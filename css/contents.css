@@ -12,6 +12,7 @@
   margin-bottom: 6rem;
   transform: translateX(-14.375rem);
  /* Mueve el elemento 70px hacia la derecha */
+ text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); /* Sombra suave */
 }
 
 .Contents__head2 {
@@ -29,7 +30,7 @@
     font-size: 4rem;
     transform: translateX(0rem); /* Mueve el elemento 70px hacia la derecha */
     margin-top:2rem;
-    
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Sombra suave */
   }
 }
 
@@ -62,6 +63,7 @@
   overflow-wrap: break-word;
   /* Asegura que no se corten las palabras */
   
+  
 }
 
 /* Aumentar el tamaño del h4 */
@@ -72,6 +74,7 @@
   /* Hacer el texto en negrita */
   margin-bottom: 1rem;
   /* Espacio debajo del título */
+  text-shadow: 7px 8px 9px rgba(0, 0, 0, 0.5); /* Sombra suave */
 }
 
 /* Estilos para los párrafos */
@@ -108,7 +111,7 @@
   .content-expanded h4 {
     font-size: 2.5rem;
     /* Aumentar aún más el tamaño del título */
-
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Sombra suave */
 
   }
 
@@ -143,22 +146,24 @@
   width: 100%; /* Ajusta el ancho de la imagen */
   height: 44.5rem; /* Mantiene la proporción de la imagen */
   margin-top: 1rem; /* Añade un margen superior para separar la imagen del texto */
-  border-radius: 0.3125rem; /* Añade bordes redondeados a la imagen */
-  box-shadow: 30px 30px 5px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22); /* Sombra decorativa */
+  border-radius: 0.7rem; /* Añade bordes redondeados a la imagen */
+  box-shadow: 30px 30px 9px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22); /* Sombra decorativa */
 }
 
 .bosque-image {
   width: 90%; /* Ajusta el ancho de la imagen */
   height: 44.5rem; /* Mantiene la proporción de la imagen */
   margin-top: 1rem; /* Añade un margen superior para separar la imagen del texto */
-  border-radius: 0.3125rem; /* Añade bordes redondeados a la imagen */
+  border-radius: 0.7rem; /* Añade bordes redondeados a la imagen */
+  box-shadow: 30px 30px 9px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22); /* Sombra decorativa */
 }
 
 .bosque-hielo {
   width: 99%; /* Ajusta el ancho de la imagen */
   height: 44rem; /* Mantiene la proporción de la imagen */
   margin-top: 1rem; /* Añade un margen superior para separar la imagen del texto */
-  border-radius: 0.3125rem;/* Añade bordes redondeados a la imagen */
+  border-radius: 0.7rem;/* Añade bordes redondeados a la imagen */
+  box-shadow: 30px 30px 9px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22); /* Sombra decorativa */
 }
 
 

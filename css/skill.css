@@ -11,6 +11,7 @@ Skill
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: flex-start;
+  
    }
    .Skill__info {
     margin-top: 3.5rem;
@@ -20,8 +21,19 @@ Skill
     font-size: 3rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
   }
-
+  .Skill__head {
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #2d2f31;
+    /* Aumentar el tamaño del título */
+    font-weight: bold;
+    /* Hacer el texto en negrita */
+    margin-bottom: 1rem;
+    /* Espacio debajo del título */
+    text-shadow: 7px 8px 9px rgba(0, 0, 0, 0.5); /* Sombra suave */
    
+  }
    @media (max-width: 780px) {
     .Skill__wrapper {
       -ms-flex-wrap: wrap;

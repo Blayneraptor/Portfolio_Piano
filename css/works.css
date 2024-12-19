@@ -53,11 +53,14 @@
 .Works__lead {
   font-weight: bold;
   font-size: 6.4rem;
+  text-shadow: 2px 8px 10px rgba(0, 0, 0, 0.5); /* Sombra suave */
+  
 }
 @media (max-width: 780px) {
   .Works__lead {
   margin-top: -5rem;
   font-size: 4rem;
+  text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5); /* Sombra suave */
 }
 }
 
@@ -69,6 +72,8 @@
   overflow: hidden;
   margin-top: 2rem; /* Ajusta este valor según sea necesario */
   margin-left:20rem;
+  border-radius: 3rem; /* Redondeo opcional */
+  
 }
 
 .video-container iframe {
@@ -103,6 +108,7 @@
     margin-top: 0rem;
     margin-bottom: -10rem;
     margin-left: 0rem;
+    
 }
 
   .Works__content iframe {
