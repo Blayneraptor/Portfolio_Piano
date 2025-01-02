@@ -48,7 +48,7 @@
   opacity: 0;
   color: #dadada;
   font-size: 2.4rem;
-  font-family: 'Italianno', cursive;
+  font-family: 'Italianno';
   font-stretch: condensed;
   font-weight: bold;
 }
@@ -80,21 +80,23 @@
   left: 8%;
   background-color: rgba(8, 8, 8, 0.8); /* Fondo oscuro para la lista */
   padding: 1rem;
-  border-radius: 0.3125rem;
+  border-radius: 2rem;
   list-style-type: none;
   color: #fff;
   z-index: 1000; /* Asegura que la lista esté por encima de otros elementos */
   letter-spacing: 0.1rem;
+  font-family: 'Italianno';
+  font-size: 4rem;
 }
 
 .canciones-list li {
-  margin: 3rem 0;
+  margin: 2rem 0;
   
 }
 
 .canciones-list li a {
   color: #DADADA;
-  font-size: 3.4rem;
+  font-size: 3.7rem;
   text-decoration: none;
 }
 
