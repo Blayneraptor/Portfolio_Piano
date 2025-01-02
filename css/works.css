@@ -82,7 +82,7 @@
   left: 0;
   width: 100%; /* El iframe ocupa todo el ancho del contenedor */
   height: 100%; /* El iframe ocupa todo el alto del contenedor */
-  border: 0; /* Elimina bordes */
+  border: none; /* Elimina bordes */
 }
 
 .video-right {
