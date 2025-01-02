@@ -27,10 +27,13 @@
 
 @media (max-width: 780px) {
   .Contents__head {
-    font-size: 4rem;
+    font-size: 5rem;
     transform: translateX(0rem); /* Mueve el elemento 70px hacia la derecha */
-    margin-top:2rem;
+    margin-top:1rem;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Sombra suave */
+  }
+  .content_movil{
+    font-size:4rem;
   }
 }
 
