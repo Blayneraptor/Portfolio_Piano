@@ -1,12 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
     const hamburgerToggle = document.getElementById('hamburger-toggle');
     const hamburgerMenu = document.getElementById('hamburger-menu');
+    const menuLinks = hamburgerMenu.querySelectorAll('a');
 
     hamburgerToggle.addEventListener('click', function() {
-        if (hamburgerMenu.style.display === 'block') {
-            hamburgerMenu.style.display = 'none';
+        if (hamburgerMenu.classList.contains('open')) {
+            hamburgerMenu.classList.remove('open');
         } else {
-            hamburgerMenu.style.display = 'block';
+            hamburgerMenu.classList.add('open');
         }
+    });
+
+    menuLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            hamburgerMenu.classList.remove('open');
+        });
     });
 });

@@ -25,14 +25,21 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 250px;
-    height: 100%;
-    background-color: #333;
+    width: 300px; /* Aumenta el ancho */
+    max-height: 50%; /* Ajusta la altura máxima */
+    background-color: rgba(51, 51, 51, 0.8); /* Medio transparente */
     color: white;
     padding: 20px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     z-index: 999;
-    max-height: 32rem;
+    overflow-y: auto; /* Añade scroll si el contenido excede la altura máxima */
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.hamburger-menu.open {
+    transform: translateX(0);
+    display: block; /* Asegura que el menú se muestre cuando esté abierto */
 }
 
 .hamburger-menu ul {
@@ -78,9 +85,9 @@
         position: fixed;
         top: 0;
         right: 0;
-        width: 250px;
+        width: 28rem;
         height: 100%;
-        background-color: #333;
+        background-color: rgba(77, 76, 76, 0.808); /* Medio transparente */
         color: white;
         padding: 20px;
         box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
