@@ -3,7 +3,7 @@ Profile
 \------------------------------------*/
 .Profile__container {
   padding: 10rem 5rem;
-  background: #c6cdd1;
+  background: rgba(128, 128, 128, 0.5); /* Fondo gris con transparencia */
   color: #333;
   margin-bottom: 12rem;
   box-sizing: border-box;

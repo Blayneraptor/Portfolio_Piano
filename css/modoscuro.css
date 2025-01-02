@@ -1,0 +1,50 @@
+.mode-toggle {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    background-color: #1b1b1b2f;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mode-toggle:hover {
+    background-color: #83a6b6;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .Header {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .Profile__container {
+    background: linear-gradient(to bottom, rgba(32, 31, 31, 0.5), rgba(32, 31, 31, 0.5));
+}
+
+body.dark-mode .Contents__head,
+body.dark-mode .Contents__head2,
+body.dark-mode .Profile__container,
+body.dark-mode .Header__list a,
+body.dark-mode .Works__lead,
+body.dark-mode .content-expanded,
+body.dark-mode .content-expanded h4,
+body.dark-mode .content-expanded p,
+body.dark-mode .content-expanded span,
+body.dark-mode .Skill__head,
+body.dark-mode .Profile__body,
+body.dark-mode .Profile__body h3,
+body.dark-mode .Profile__body p {
+    color: #ffffff;
+}
