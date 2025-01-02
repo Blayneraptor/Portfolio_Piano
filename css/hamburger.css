@@ -25,14 +25,14 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 300px; /* Aumenta el ancho */
-    max-height: 50%; /* Ajusta la altura máxima */
+    width: auto; /* Aumenta el ancho */
+    height: auto;
+    max-height: 33rem; /* Ajusta la altura máxima */
     background-color: rgba(51, 51, 51, 0.8); /* Medio transparente */
     color: white;
     padding: 20px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     z-index: 999;
-    overflow-y: auto; /* Añade scroll si el contenido excede la altura máxima */
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
 }
@@ -85,14 +85,14 @@
         position: fixed;
         top: 0;
         right: 0;
-        width: 28rem;
-        height: 100%;
+        width: auto;
+        height: auto;
         background-color: rgba(77, 76, 76, 0.808); /* Medio transparente */
         color: white;
         padding: 20px;
         box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
         z-index: 999;
-        max-height: 32rem;
+        max-height: 30rem;
     }
 
     .hamburger-menu ul {
