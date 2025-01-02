@@ -1,0 +1,111 @@
+.hamburger-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem; /* Cambiado de left a right para alinearlo al lado derecho */
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    background-color: #1b1b1b2f;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger-toggle:hover {
+    background-color: #778f96;
+}
+
+.hamburger-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.hamburger-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hamburger-menu ul li {
+    margin: 20px 0;
+}
+
+.hamburger-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hamburger-toggle {
+        top: 1rem;
+        right: 1rem; /* Mantiene la posición en pantallas más pequeñas */
+        background-color: #1b1b1b2f;
+        border: none;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .hamburger-toggle img {
+        width: 24px;
+        height: 20px;
+    }
+    .menu-title {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-top: 0; /* Asegura que no haya margen superior */
+        
+    }
+
+    .hamburger-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        max-height: 30rem;
+    }
+
+    .hamburger-menu ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .hamburger-menu ul li {
+        margin: 16px 0;
+    }
+
+    .hamburger-menu ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 780px) {
+    .hamburger-toggle,
+    .hamburger-menu {
+        display: none;
+    }
+}

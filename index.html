@@ -21,14 +21,31 @@
     <link rel="stylesheet" href="./css/skill.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="css/modoscuro.css">
+    <link rel="stylesheet" href="css/hamburger.css">
     <script src="js/jquery.js"></script>
     <script src="js/t.min.js"></script>
     <script src="js/modoscuro.js"></script>
+    <script src="js/hamburger.js"></script>
     
 </head>
 <body id="particles-js">
-     <!-- Botón para cambiar el modo -->
-     <button id="mode-toggle" class="mode-toggle">🌙</button>
+    <!-- Botón para cambiar el modo -->
+    <button id="mode-toggle" class="mode-toggle">🌙</button>
+    <!-- Botón de menú hamburguesa (solo visible en móvil) -->
+   <button id="hamburger-toggle" class="hamburger-toggle">
+        <img src="images/togglehamburguer.png" alt="Menu">
+    </button>
+    <!-- Menú hamburguesa (solo visible en móvil) -->
+    <nav id="hamburger-menu" class="hamburger-menu">
+        <ul>
+            <li class="menu-title">Canciones</li>
+            <li><a href="#cancion1">Howl's Moving Merry go Round</a></li>
+            <li><a href="#cancion2">Empty Core 1</a></li>
+            <li><a href="#cancion3">Love Story</a></li>
+            <li><a href="#cancion4">Idea 22 Gibran Alcocer</a></li>
+            <li><a href="#cancion5">Idea 1 Gibran Alcocer</a></li>
+        </ul>
+    </nav>
     <!--Header-->
     <header class="Header">
        
