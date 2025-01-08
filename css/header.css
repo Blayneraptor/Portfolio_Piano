@@ -1,5 +1,6 @@
 .Header-sp {
   display: none;
+  
 }
 
 @media (max-width: 780px) {
@@ -7,9 +8,15 @@
     display: block;
     width: 100%;
     height: 31rem; /* Cambia el tamaño de la imagen a la mitad del contenedor */
-    
+    background-image: url("../images/hero-sp2.png");
+    position: relative;
+    background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 30px 20px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22); /* Sombra decorativa */
+  border-radius: 2rem;
   }
 }
+
 
 .Header {
   position: relative;
