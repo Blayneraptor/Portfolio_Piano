@@ -92,7 +92,8 @@
   color: #fff;
   z-index: 1000; /* Asegura que la lista esté por encima de otros elementos */
   letter-spacing: 0.1rem;
-  font-family: 'Italianno';
+  font-family: 'sans-serif';
+  font-style: italic;
   font-size: 4rem;
 }
 
