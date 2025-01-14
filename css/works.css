@@ -65,6 +65,7 @@
 }
 
 .video-container {
+  margin:0 auto;
   position: relative;
   width: 100%; /* El contenedor ocupa todo el ancho disponible */
   padding-bottom: 56.25%; /* Altura calculada para una relación de aspecto 16:9 */
