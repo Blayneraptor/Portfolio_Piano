@@ -79,6 +79,7 @@ Profile
 
 
 .Profile__img {
+  margin-left: 30rem;
   -webkit-filter: drop-shadow(-0.6875rem -0.125rem 1.625rem rgba(0, 0, 0, 0.14));
   filter: drop-shadow(-0.6875rem -0.125rem 1.625rem rgba(0, 0, 0, 0.14));
   text-align: center;
