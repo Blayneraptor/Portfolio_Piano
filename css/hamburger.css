@@ -97,7 +97,7 @@
         padding: 20px;
         box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
         z-index: 999;
-        max-height: 30rem;
+        max-height: 33rem;
     }
 
     .hamburger-menu ul {
