@@ -34,8 +34,6 @@ body {
 
 @media (max-width: 780px) {
   body {
-    background-image: url("../images/bordes.png"); /* Ruta correcta hacia la imagen */
-    background-repeat: repeat; /* Repite la imagen a lo largo del fondo */
     background-position: center center; /* Centra la imagen tanto horizontal como verticalmente */
     background-size: cover; /* Hace que la imagen cubra toda la pantalla, manteniendo su relación de aspecto */
     height: 100vh; /* Asegura que el fondo ocupe toda la altura visible de la pantalla */
