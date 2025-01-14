@@ -185,6 +185,13 @@
   box-shadow: 30px 30px 9px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22); /* Sombra decorativa */
 }
 
+.castillo{
+  width: 100%; /* Ajusta el ancho de la imagen */
+  height: 44rem; /* Mantiene la proporción de la imagen */
+  margin-top: 1rem; /* Añade un margen superior para separar la imagen del texto */
+  border-radius: 0.7rem;/* Añade bordes redondeados a la imagen */
+  box-shadow: 30px 30px 9px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22); /* Sombra decorativa */
+}
 
 .text-content {
   
