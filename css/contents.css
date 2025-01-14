@@ -29,7 +29,7 @@
   .Contents__head {
     font-size: 6rem;
     transform: translateX(0rem); /* Mueve el elemento 70px hacia la derecha */
-    margin-top:4rem;
+    margin-top:0rem;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Sombra suave */
   }
   .content_movil{
