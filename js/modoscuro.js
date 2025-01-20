@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+ //Parte de la animacion del listado de canciones
+
 document.addEventListener('DOMContentLoaded', () => {
   const headerItem = document.querySelector('.Header__item');
   const cancionesList = document.querySelector('.canciones-list');
