@@ -16,3 +16,25 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const headerItem = document.querySelector('.Header__item');
+  const cancionesList = document.querySelector('.canciones-list');
+
+  headerItem.addEventListener('mouseover', () => {
+    cancionesList.classList.remove('hide');
+    cancionesList.classList.add('show');
+  });
+
+  headerItem.addEventListener('mouseout', () => {
+    cancionesList.classList.remove('show');
+    cancionesList.classList.add('hide');
+
+    // Esperar a que termine la animación antes de ocultar
+    cancionesList.addEventListener(
+      'animationend',
+      () => cancionesList.classList.remove('hide'),
+      { once: true }
+    );
+  });
+});
