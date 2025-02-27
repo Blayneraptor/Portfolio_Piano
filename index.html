@@ -438,28 +438,32 @@
                 <li class="Footer__item"><a href="#cancion1">Canciones</a></li>
                 <li class="Footer__item"><a href="#profile">Perfil</a></li>
             </ul>
-            <span class="Footer__copy">© 2025 José Pascual Couso Pérez</span>
-        </footer>
-    </div>
+            <span class="Footer__copy">© <span id="currentYear">2025</span> José Pascual Couso Pérez</span>
+</footer>
+</div>
 
-    <!--Loading-->
-    <div class="Loading sp-only">
-        <div class="Loading__bar"></div>
-        <div class="Loading__up" style="height: 50%;"></div>
-        <div class="Loading__down" style="height: 50%;"></div>
-    </div>
+<!--Loading-->
+<div class="Loading sp-only">
+    <div class="Loading__bar"></div>
+    <div class="Loading__up" style="height: 50%;"></div>
+    <div class="Loading__down" style="height: 50%;"></div>
+</div>
 
-    <script>
-        $(function () {
-            $(window).scroll(function () {
-                $('.fadein').each(function () {
-                    var targetElement = $(this).offset().top;
-                    var scroll = $(window).scrollTop();
-                    var windowHeight = $(window).height();
-                    if (scroll > targetElement - windowHeight + 150) {
-                        $(this).addClass('scrollin');
-                    }
-                });
+<script>
+    // Actualizar el año automáticamente
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    $(function () {
+        $(window).scroll(function () {
+            $('.fadein').each(function () {
+                var targetElement = $(this).offset().top;
+                var scroll = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                if (scroll > targetElement - windowHeight + 150) {
+                    $(this).addClass('scrollin');
+                }
+            });
+
 
                 $('.js-rotate').each(function () {
                     var targetElement = $(this).offset().top;

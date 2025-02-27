@@ -23,12 +23,7 @@ body {
   margin: 0; /* Asegúrate de que no haya márgenes que provoquen desbordamiento */
   overflow-x: hidden;
   overflow-y: auto; 
-  background-image: url("../images/bordes.png"); /* Ruta correcta hacia la imagen */
-  background-repeat: repeat; /* Repite la imagen a lo largo del fondo */
-    background-position: top left; /* Inicia el fondo en la esquina superior izquierda */
-    
     background-size: 50% 10%; /* Hace que la imagen sea más pequeña (ajusta según sea necesario) */
-  
 
 }
 
