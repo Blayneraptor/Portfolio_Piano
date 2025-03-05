@@ -161,12 +161,22 @@
   .Header {
     display: block;
     width: 100%;
-    height: 60rem;
+    height: 70rem;
     background-image: url("../images/hero-sp2.png");
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0 30px 20px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
     border-radius: 2rem;
+  }
+  .Header__title {
+    display: none;
+  }
+  
+  .Header__title span {
+    display: none;
+  }
+  .Header__list {
+    display:none;
   }
 }

@@ -26,6 +26,11 @@
 }
 
 @media (max-width: 780px) {
+  .Contents {
+    width: 100%;
+    overflow: hidden;
+    /* Oculta contenido que se salga del contenedor */
+  }
   .Contents__head {
     font-size: 6rem;
     transform: translateX(0rem); /* Mueve el elemento 70px hacia la derecha */
