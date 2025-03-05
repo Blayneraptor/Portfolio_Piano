@@ -62,15 +62,15 @@
     .hamburger-toggle {
         top: 1rem;
         right: 1rem; /* Mantiene la posición en pantallas más pequeñas */
-        background-color: #1b1b1b2f;
+        background-color: #ffffffaf;
         border: none;
         cursor: pointer;
         z-index: 1000;
     }
 
     .hamburger-toggle img {
-        width: 24px;
-        height: 20px;
+        width: 26px;
+        height: 22px;
     }
     .menu-title {
         font-size: 3rem;
