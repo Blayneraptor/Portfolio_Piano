@@ -94,7 +94,7 @@
 
 @media (max-width: 780px) {
   .video-right {
-    margin-left: 0; /* Restablece el margen izquierdo en pantallas pequeñas */
+    margin-left: 0px; /* Restablece el margen izquierdo en pantallas pequeñas */
     width: 100%; /* Asegura que el video ocupe todo el ancho disponible en pantallas pequeñas */
     margin-right:0;
   }
