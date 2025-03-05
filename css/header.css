@@ -1,15 +1,6 @@
 .Header-sp {
   display: none;
-  
 }
-
-@media (max-width: 780px) {
-  .Header-sp {
-    display: none;
-    
-  }
-}
-
 
 .Header {
   position: relative;
@@ -18,45 +9,19 @@
   background-repeat: no-repeat;
   width: 100%;
   height: 148vh;
-  box-shadow: 0 50px 20px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22); /* Sombra decorativa */
+  box-shadow: 0 50px 20px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
   border-radius: 2rem;
-  /*------------------------------------*\
-  fixed bar
-  \------------------------------------*/
-  /*------------------------------------*\
-  nav
-  \------------------------------------*/
-  /*------------------------------------*\
-  title
-  \------------------------------------*/
 }
-
-@media (max-width: 780px) {
-  .Header {
-    display: block;
-    width: 100%;
-    height: 40rem; /* Cambia el tamaño de la imagen a la mitad del contenedor */
-    background-image: url("../images/hero-sp2.png");
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: 0 30px 20px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22); /* Sombra decorativa */
-    border-radius: 2rem;
-  }
-  }
 
 .Header__list {
   position: absolute;
   top: 4rem;
   right: 6rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   opacity: 0;
   color: #dadada;
   font-size: 2.4rem;
   font-family: 'Italianno';
-  font-stretch: condensed;
   font-weight: bold;
 }
 
@@ -65,8 +30,8 @@
 }
 
 .Header__item a {
-  position: relative; /* Para permitir que z-index funcione */
-  z-index: 10; /* Asegura que el enlace esté por encima de otros elementos */
+  position: relative;
+  z-index: 10;
   font-size: 5.5rem;
   display: inline-block;
   color: #DADADA;
@@ -79,7 +44,6 @@
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
-/* Animaciones */
 @keyframes slideFadeIn {
   0% {
     transform: translateY(-20%) scale(0.9);
@@ -102,7 +66,6 @@
   }
 }
 
-/* Lista oculta */
 .canciones-list {
   display: none;
   position: absolute;
@@ -120,17 +83,15 @@
   font-size: 4rem;
   opacity: 0;
   transform: translateY(-20%) scale(0.9);
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Suavizar transición */
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Mostrar la lista al pasar el ratón */
 .Header__item:hover .canciones-list {
   display: block;
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Estilos de los elementos de la lista */
 .canciones-list li {
   margin: 2rem 0;
 }
@@ -145,12 +106,6 @@
   color: #9df7f1;
 }
 
-/* Si quieres agregar un efecto de transición para la aparición */
-.canciones-list.show {
-  display: block;
-  animation: fadeIn 1.5s ease;
-}
-
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
@@ -160,9 +115,7 @@
   position: relative;
   top: 6.25rem;
   left: 5rem;
-  -webkit-transform: rotate(-4deg);
   transform: rotate(-4deg);
-  -webkit-transform-origin: left;
   transform-origin: left;
   font-weight: bold;
 }
@@ -181,7 +134,6 @@
   margin-left: -1.5vw;
   top: 80%;
   left: 90%;
-  -webkit-animation: huwahuwa 2s infinite alternate linear;
   animation: huwahuwa 2s infinite alternate linear;
 }
 
@@ -194,31 +146,27 @@
   color: #738396;
 }
 
-@-webkit-keyframes huwahuwa {
-  0% {
-    top: 80%;
-  }
-
-  50% {
-    top: 81%;
-  }
-
-  100% {
-    top: 80%;
-  }
-}
-
 @keyframes huwahuwa {
-  0% {
-    top: 80%;
-  }
+  0% { top: 80%; }
+  50% { top: 81%; }
+  100% { top: 80%; }
+}
 
-  50% {
-    top: 81%;
+/* MEDIA QUERIES */
+@media (max-width: 780px) {
+  .Header-sp {
+    display: none;
   }
-
-  100% {
-    top: 80%;
+  
+  .Header {
+    display: block;
+    width: 100%;
+    height: 60rem;
+    background-image: url("../images/hero-sp2.png");
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 30px 20px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+    border-radius: 2rem;
   }
 }
-/*# sourceMappingURL=header.css.map */
